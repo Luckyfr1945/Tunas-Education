@@ -1,70 +1,74 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class settings : MonoBehaviour
 {
-    [Header("Panels")]
+    [Header("Isi Konten Panel")]
     public GameObject soundPanel;
     public GameObject graphicPanel;
 
-    [Header("Buttons")]
+    [Header("Tombol Tab")]
     public Button soundTabButton;
     public Button graphicTabButton;
 
-    [Header("Button Colors")]
-    public Color activeColor = Color.white;    // Warna saat terpilih (terang)
-    public Color inactiveColor = Color.gray;   // Warna saat tidak terpilih (agak gelap)
+    [Header("Warna Tombol")]
+    public Color activeColor = Color.white;    
+    public Color inactiveColor = Color.gray;   
 
+    [Header("Pengaturan Suara")]
+    public Slider sfxSlider; 
     private void Start()
     {
-        // Hubungkan klik tombol ke fungsi
-        soundTabButton.onClick.AddListener(ShowSoundSettings);
-        graphicTabButton.onClick.AddListener(ShowGraphicSettings);
 
-        // Default: Masuk ke Sound Settings pertama kali
-        ShowSoundSettings();
+        if (soundTabButton != null)
+            soundTabButton.onClick.AddListener(ShowSoundSettings);
+        
+        if (graphicTabButton != null)
+            graphicTabButton.onClick.AddListener(ShowGraphicSettings);
+
+        ShowSoundSettings(); 
+
+        if (sfxSlider != null)
+        {
+            float savedVolume = PlayerPrefs.GetFloat("SFX_Volume", 100f);
+            
+            sfxSlider.value = savedVolume; 
+
+            sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+        }
+    }
+
+    public void SetSFXVolume(float value)
+    {
+
+        PlayerPrefs.SetFloat("SFX_Volume", value);
+        PlayerPrefs.Save();
+
     }
 
     public void ShowSoundSettings()
     {
-        // Switch Panel
-        soundPanel.SetActive(true);
-        graphicPanel.SetActive(false);
+        if (soundPanel != null) soundPanel.SetActive(true);
+        if (graphicPanel != null) graphicPanel.SetActive(false);
 
-        // Visual Feedback (Warna Tombol)
         SetButtonVisual(soundTabButton, true);
         SetButtonVisual(graphicTabButton, false);
-
-        // Jalankan animasi jika ada
-        TriggerTabAnimation(soundTabButton);
     }
 
     public void ShowGraphicSettings()
     {
-        // Switch Panel
-        soundPanel.SetActive(false);
-        graphicPanel.SetActive(true);
+        if (soundPanel != null) soundPanel.SetActive(false);
+        if (graphicPanel != null) graphicPanel.SetActive(true);
 
-        // Visual Feedback (Warna Tombol)
         SetButtonVisual(soundTabButton, false);
         SetButtonVisual(graphicTabButton, true);
-
-        // Jalankan animasi jika ada
-        TriggerTabAnimation(graphicTabButton);
     }
 
     private void SetButtonVisual(Button btn, bool isActive)
     {
-        // Mengubah warna Image tombol
-        btn.GetComponent<Image>().color = isActive ? activeColor : inactiveColor;
-    }
-
-    private void TriggerTabAnimation(Button btn)
-    {
-        Animator anim = btn.GetComponent<Animator>();
-        if (anim != null)
+        if (btn != null && btn.GetComponent<Image>() != null)
         {
-            anim.SetTrigger("Selected"); // Pastikan ada trigger 'Selected' di Animator tombol
+            btn.GetComponent<Image>().color = isActive ? activeColor : inactiveColor;
         }
     }
 }
