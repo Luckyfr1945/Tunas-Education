@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/lvlmenuipa.unity
     guid: 927134e231ce319629def26b7270ac3f
   - enabled: 1
+    path: Assets/Scenes/lvlmenusarkas.unity
+    guid: 5c21a2c1f1f734e939cb178fd3f10d28
+  - enabled: 1
     path: Assets/Scenes/lvlmenumath.unity
     guid: 0b46e3f5229f00677a3e603cc42f53b9
   m_configObjects:
