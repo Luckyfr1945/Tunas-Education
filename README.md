@@ -21,14 +21,18 @@
 
 ## 📸 Tampilan Preview
 <p align="center">
-  <img src="screenshot/1.png" width="400" alt="Main Menu">
-  <img src="screenshot/2.png" width="400" alt="Level Selection">
+  <img src="screenshot/1.jpeg" width="400" alt="Main Menu">
+  <img src="screenshot/2.jpeg" width="400" alt="Level Selection">
 </p>
 <p align="center">
-  <img src="screenshot/3.png" width="260" alt="Gameplay 1">
-  <img src="screenshot/4.png" width="260" alt="Gameplay 2">
-  <img src="screenshot/5.png" width="260" alt="Gameplay 3">
-   <img src="screenshot/6.png" width="260" alt="Gameplay 4">
+  <img src="screenshot/3.jpeg" width="260" alt="Gameplay 1">
+  <img src="screenshot/4.jpeg" width="260" alt="Gameplay 2">
+  <img src="screenshot/5.jpeg" width="260" alt="Gameplay 3">
+  <img src="screenshot/6.jpeg" width="260" alt="Gameplay 4">
+</p>
+<p align="center">
+  <img src="screenshot/7.jpeg" width="400" alt="Settings Menu">
+  <img src="screenshot/8.jpeg" width="400" alt="Credits Menu">
 </p>
 
 ---
@@ -37,7 +41,10 @@
 *   **🎯 Intelligent Navigation**: Transisi antar panel menggunakan sistem `CanvasGroup` fading yang hemat resource (bukan sekadar On/Off).
 *   **📚 Dynamic Categories**: Sistem pemilihan kategori kuis (Matematika, IPA, dll) yang mudah dikembangkan.
 *   **💎 High Fidelity UI**: Menggunakan **TextMeshPro** untuk teks tajam di resolusi apa pun.
-*   **⚙️ Cross-Platform Exit**: Logika tombol Quit yang bekerja sempurna di Build maupun Editor.
+*   **🎵 Persistent Audio System**: Background musik abadi lintas-scene menggunakan sistem `MusicManager` (`DontDestroyOnLoad`).
+*   **⚙️ Advanced Settings & Storage**: Pengaturan volume *real-time* yang disimpan secara permanen menggunakan API `PlayerPrefs`.
+*   **📜 Dynamic Scroll View**: Halaman *Credits/Policy* interaktif yang memanjang otomatis menyesuaikan konten.
+*   **🕹️ Cross-Platform Exit**: Logika tombol Quit yang bekerja sempurna di Build maupun Editor.
 
 ---
 
@@ -67,21 +74,27 @@ git lfs pull
 ### 3. Membuka di Unity
 *   Buka Unity Hub.
 *   Pilih folder project: `/home/kiki/project unity/My project/My project/`.
-*   Buka Scene `Menu` di folder `Assets/Scenes/`.
+*   Buka Scene `MainMenu` di folder `Assets/Scenes/`.
 
 ---
 
 ## 💻 Dokumentasi Script C#
 
 ### `MainMenu.cs`
-Script utama untuk mengontrol alur menu.
+Script utama untuk mengontrol alur menu awal.
 *   **`PlayGame()`**: Memuat scene game berdasarkan variabel `sceneToLoad`.
-*   **`QuitGame()`**: Menghentikan aplikasi (mendukung `Application.Quit` dan `EditorApplication.isPlaying`).
+*   **`QuitGame()`**: Menghentikan aplikasi secara aman.
 
-**Cara Setup di Inspector:**
-1. Assign **Button Play** ke slot `Play Button`.
-2. Assign **Button Exit** ke slot `Exit Button`.
-3. Isi **Scene To Load** dengan nama scene tujuan (contoh: `GameScene`).
+### `settings.cs`
+Script pengontrol UI Settings dan navigasi tab.
+*   Mengatur logika *switch panel* (Sound & Graphic).
+*   Menyimpan preferensi volume ke `PlayerPrefs`.
+*   Berkomunikasi dengan radar `FindObjectOfType` untuk mencari `MusicManager`.
+
+### `MusicManager.cs`
+Script *Singleton* untuk mengamankan sistem audio.
+*   Menerapkan *mantra* `DontDestroyOnLoad` untuk mencegah lagu terputus saat transisi *scene*.
+*   Membaca dan menerapkan volume terakhir yang di-save saat game baru dimulai.
 
 ---
 
@@ -91,8 +104,8 @@ Assets/
  ├── Art/               # Sprite, Background, & Icons
  ├── Audio/             # Music & SFX
  ├── Prefabs/           # Objek yang bisa di-reuse
- ├── Scenes/            # Daftar Scene (Menu, Gameplay, Result)
- ├── Scripts/           # Seluruh kode C#
+ ├── Scenes/            # Daftar Scene (Menu, Gameplay, Settings, dll)
+ ├── Scripts/           # Seluruh kode logika C#
  └── Resources/         # Data Soal (JSON/SO)
 ```
 
@@ -102,7 +115,7 @@ Assets/
 *   **Tombol Play Tidak Pindah Scene?**
     Pastikan nama scene di Inspector sudah dimasukkan ke dalam **Build Settings (Ctrl+Shift+B)**.
 *   **Gambar di README Tidak Muncul?**
-    Pastikan folder `screenshot/` ada di root project dan nama filenya benar (perhatikan spasi).
+    Pastikan folder `screenshot/` ada di root project dan format gambarnya menggunakan `.jpeg`.
 *   **Error Memory / Koneksi Git?**
     Naikkan buffer git: `git config --global http.postBuffer 524288000`.
 
@@ -122,4 +135,3 @@ Project ini dikembangkan dengan bangga oleh:
 
 ---
 [Kembali ke atas](#-tunas-education-premium-quiz-game)
-
