@@ -1,70 +1,53 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections; // Dibutuhkan untuk Coroutine
 
 public class MainMenu : MonoBehaviour
 {
-    [Header("Menu Buttons")]
+    [Header("Main Menu Buttons")]
     public Button playButton;
-    public Button optionButton; // Tambah tombol Option/Settings
+    public Button optionButton;
+    public Button creditButton; 
     public Button exitButton;
 
-    [Header("Settings Popup")]
-    public GameObject settingsPanel; 
-    public Button closeSettingsButton; // Tombol exit di dalam panel
-
-    [Header("Settings")]
-    public string sceneToLoad = "GameScene";
+    [Header("Target Scene Names")]
+    // Nama scene harus sesuai dengan yang ada di Build Settings
+    public string playTargetScene = "Category";       
+    public string settingsTargetScene = "settings";   
+    public string creditTargetScene = "SampleScene"; // Ganti jika sudah ada scene credit
+    public string extraTargetScene = "lvlmenuipa";    
 
     private void Start()
     {
+        // Hubungkan fungsi ke tombol
         if (playButton != null) playButton.onClick.AddListener(PlayGame);
+        if (optionButton != null) optionButton.onClick.AddListener(LoadSettingsScene);
+        if (creditButton != null) creditButton.onClick.AddListener(LoadCredits);
         if (exitButton != null) exitButton.onClick.AddListener(QuitGame);
-        
-        // Listener baru untuk Settings
-        if (optionButton != null) optionButton.onClick.AddListener(OpenSettings);
-        if (closeSettingsButton != null) closeSettingsButton.onClick.AddListener(CloseSettings);
-
-        // Sembunyikan panel di awal
-        if (settingsPanel != null) settingsPanel.SetActive(false);
     }
 
-    public void OpenSettings()
+    // 1. Pindah ke scene Category
+    public void PlayGame() 
+    { 
+        SceneManager.LoadScene(playTargetScene); 
+    }
+
+    // 2. Sekarang Option langsung pindah Scene (bukan buka popup)
+    public void LoadSettingsScene()
     {
-        if (settingsPanel != null)
-        {
-            settingsPanel.SetActive(true); // Aktifkan dulu biar animasinya jalan
-            Animator anim = settingsPanel.GetComponent<Animator>();
-            if (anim != null) anim.SetTrigger("Open");
-        }
+        SceneManager.LoadScene(settingsTargetScene);
     }
 
-    public void CloseSettings()
+    // 3. Pindah ke Credits
+    public void LoadCredits()
     {
-        if (settingsPanel != null)
-        {
-            Animator anim = settingsPanel.GetComponent<Animator>();
-            if (anim != null)
-            {
-                anim.SetTrigger("Close");
-                // Tunggu 0.5 detik (sesuai durasi animasi kamu) baru hilangkan object
-                StartCoroutine(WaitAndDisable(0.5f)); 
-            }
-            else
-            {
-                settingsPanel.SetActive(false);
-            }
-        }
+        SceneManager.LoadScene(creditTargetScene); 
     }
 
-    private IEnumerator WaitAndDisable(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        settingsPanel.SetActive(false); // Akhirnya object hilang setelah animasi
+    // 4. Keluar Game
+    public void QuitGame() 
+    { 
+        Debug.Log("Game Exited"); // Muncul di console saat testing
+        Application.Quit(); 
     }
-
-    // Fungsi PlayGame dan QuitGame tetap sama...
-    public void PlayGame() { SceneManager.LoadScene(sceneToLoad); }
-    public void QuitGame() { Application.Quit(); }
 }
