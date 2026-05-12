@@ -1,12 +1,30 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelMenu : MonoBehaviour
+public class LevelSelection : MonoBehaviour
 {
-    public string categoryScene = "Category";
+    [Header("Pengaturan Scene")]
+ 
+    public string namaSceneGameplay = "GameplayScene"; 
+    public string namaSceneKembali = "Category"; 
 
-    public void BackToCategory()
+    // Fungsi ini akan dipasang ke SEMUA tombol level (1-20)
+    public void PilihLevel(int nomorLevel)
     {
-        SceneManager.LoadScene(categoryScene);
+        Debug.Log("Pemain memilih Level: " + nomorLevel);
+
+        // Simpan nomor level ke memori Unity
+        // Ini kuncinya! Scene Gameplay nanti akan membaca data "LevelAktif" ini
+        PlayerPrefs.SetInt("LevelAktif", nomorLevel);
+        PlayerPrefs.Save();
+
+        // Pindah ke scene Gameplay
+        SceneManager.LoadScene(namaSceneGameplay);
+    }
+
+    // Fungsi untuk tombol X (Close/Back) warna pink di pojok kanan atas
+    public void KembaliKeKategori()
+    {
+        SceneManager.LoadScene(namaSceneKembali);
     }
 }
