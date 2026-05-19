@@ -447,8 +447,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tunas Education
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2172b8f06c51c07d292521c5c4da95d3, type: 2}
-  m_sharedMaterial: {fileID: 1594578377005096567, guid: 2172b8f06c51c07d292521c5c4da95d3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d03696bebdb7b6dfb8a1070b1033b580, type: 2}
+  m_sharedMaterial: {fileID: -7454102657918367148, guid: d03696bebdb7b6dfb8a1070b1033b580, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8711297853905852099, guid: fd8d35704358f3f48bfc0505f58853c3, type: 3}
+  m_Sprite: {fileID: -3645803505201719948, guid: dc2434a36707d5e4795462b030c2030d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
