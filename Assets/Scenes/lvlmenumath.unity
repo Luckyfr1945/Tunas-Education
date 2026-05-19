@@ -5017,6 +5017,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelMenu
   namaSceneGameplay: GameplayScene
   namaSceneKembali: Category
+  arrayTombolLevel:
+  - {fileID: 1686546374}
+  - {fileID: 1011721766}
+  - {fileID: 282967499}
+  - {fileID: 1979998794}
+  - {fileID: 2145735221}
+  - {fileID: 1313015111}
+  - {fileID: 419710621}
+  - {fileID: 1428803591}
+  - {fileID: 1316434692}
+  - {fileID: 897108464}
+  - {fileID: 862641489}
+  - {fileID: 50330562}
+  - {fileID: 1594746008}
+  - {fileID: 530389135}
+  - {fileID: 931505488}
+  - {fileID: 1708483386}
+  - {fileID: 245771973}
+  - {fileID: 1138063534}
+  - {fileID: 1957579843}
+  - {fileID: 553601659}
+  warnaSelesai: {r: 0.49411765, g: 0.8509804, b: 0.34117648, a: 1}
+  warnaBelum: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1420410629
 Transform:
   m_ObjectHideFlags: 0
@@ -5526,7 +5549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1686546375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1420410628}
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
+        m_MethodName: PilihLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1686546375
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -127,7 +127,7 @@ public class GameplayManager : MonoBehaviour
 
             // MENGIRIM WAKTU BARU KE SCRIPT TIMER
             // ⚠️ PENTING: Ganti kata "waktuMaksimal" di bawah ini dengan nama variabel asli yang ada di script TimerBar.cs milikmu!
-            scriptTimer.maxTime = waktuLevelIni;
+            scriptTimer.maxTime = waktuLevelIni; 
 
             scriptTimer.ResetTimer();
         }
