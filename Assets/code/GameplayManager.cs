@@ -1,14 +1,13 @@
 using UnityEngine;
 using TMPro; 
 using UnityEngine.SceneManagement;
-using System.Collections.Generic; // Wajib ada untuk sistem List Bank Soal
+using System.Collections.Generic; 
 
 public class GameplayManager : MonoBehaviour
 {
     [Header("Bank Soal (Masukkan Banyak File Soal Kesini)")]
     public DataSoal[] kumpulanSoal; 
     
-    // Variabel penyimpanan ditaruh di DALAM class
     private DataSoal soalSaatIni; 
     private int levelAktif;
     private int indexSoalTerpilih; 
@@ -20,6 +19,12 @@ public class GameplayManager : MonoBehaviour
     [Header("Komponen Timer")]
     public TimerBar scriptTimer; 
 
+    [Header("Pengaturan Kesulitan Waktu")]
+    [Tooltip("Waktu standar untuk level 1-5 (dalam detik)")]
+    public float waktuDasar = 30f; 
+    [Tooltip("Berapa detik waktu akan dikurangi setiap naik 5 level?")]
+    public float potonganWaktu = 5f; 
+
     [Header("UI Panel")]
     public GameObject panelMenang;
     public GameObject panelKalah;
@@ -30,7 +35,6 @@ public class GameplayManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1f; 
-
         levelAktif = PlayerPrefs.GetInt("LevelAktif", 1);
 
         panelMenang.SetActive(false);
@@ -38,7 +42,6 @@ public class GameplayManager : MonoBehaviour
         if(panelPause != null) panelPause.SetActive(false);
         
         isGameSelesai = false;
-
         PilihSoalRandom();
     }
 
@@ -50,37 +53,30 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
-    // --- FUNGSI MENCARI SOAL ---
     private void PilihSoalRandom()
     {
         if (kumpulanSoal.Length == 0)
         {
-            Debug.LogError("Bank Soal kosong!");
+            Debug.LogError("Bank Soal kosong! Masukkan file DataSoal ke Inspector.");
             return;
         }
 
-        // Cek apakah level ini sudah pernah dimenangkan sebelumnya
         int soalTersimpan = PlayerPrefs.GetInt("Level_" + levelAktif + "_Soal", -1);
 
         if (soalTersimpan != -1)
         {
-            // Kalau SUDAH PERNAH MENANG: Munculkan pertanyaan yang SAMA PERSIS
             Debug.Log("Level ini sudah tamat. Memuat soal lama...");
             indexSoalTerpilih = soalTersimpan;
             soalSaatIni = kumpulanSoal[indexSoalTerpilih];
         }
         else
         {
-            // Kalau BELUM PERNAH MENANG: Cari soal acak yang belum terpakai
-            Debug.Log("Level baru. Mencari soal acak yang belum terpakai...");
-            
+            Debug.Log("Level baru atau belum tamat. Mencari soal acak yang belum terpakai...");
             List<int> soalBelumTerpakai = new List<int>();
 
             for (int i = 0; i < kumpulanSoal.Length; i++)
             {
                 bool sudahDipakai = false;
-                
-                // Cek 20 level
                 for (int lvl = 1; lvl <= 20; lvl++) 
                 {
                     if (PlayerPrefs.GetInt("Level_" + lvl + "_Soal", -1) == i)
@@ -89,14 +85,9 @@ public class GameplayManager : MonoBehaviour
                         break;
                     }
                 }
-
-                if (!sudahDipakai)
-                {
-                    soalBelumTerpakai.Add(i);
-                }
+                if (!sudahDipakai) soalBelumTerpakai.Add(i);
             }
 
-            // Pilih acak dari daftar yang belum terpakai
             if (soalBelumTerpakai.Count > 0)
             {
                 int acak = Random.Range(0, soalBelumTerpakai.Count);
@@ -122,13 +113,29 @@ public class GameplayManager : MonoBehaviour
             teksPilihanJawaban[i].text = soalSaatIni.pilihanJawaban[i];
         }
 
-        if (scriptTimer != null) scriptTimer.ResetTimer();
+        if (scriptTimer != null) 
+        {
+            // --- LOGIKA WAKTU SEMAKIN CEPAT ---
+            // Hitung tingkat kesulitan (0 untuk lvl 1-5, 1 untuk 6-10, 2 untuk 11-15, dst)
+            int kelipatanKesulitan = (levelAktif - 1) / 5;
+            
+            // Kurangi waktu dasar dengan potongan waktu
+            float waktuLevelIni = waktuDasar - (kelipatanKesulitan * potonganWaktu);
+
+            // Jaga-jaga biar waktunya gak sampai minus atau 0 (minimal 5 detik)
+            if (waktuLevelIni < 5f) waktuLevelIni = 5f;
+
+            // MENGIRIM WAKTU BARU KE SCRIPT TIMER
+            // ⚠️ PENTING: Ganti kata "waktuMaksimal" di bawah ini dengan nama variabel asli yang ada di script TimerBar.cs milikmu!
+            scriptTimer.maxTime = waktuLevelIni;
+
+            scriptTimer.ResetTimer();
+        }
     }
 
     public void CekJawaban(int indeksPilihan)
     {
         if (isGameSelesai) return; 
-
         scriptTimer.enabled = false; 
 
         if (indeksPilihan == soalSaatIni.indeksJawabanBenar)
@@ -141,14 +148,10 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
-    // --- FUNGSI MENANG ---
     private void Menang()
     {
-        Debug.Log("Jawaban Benar!");
         isGameSelesai = true;
         panelMenang.SetActive(true);
-
-        // Saat menang, kunci soal ini permanen ke level yang sedang dimainkan
         PlayerPrefs.SetInt("Level_" + levelAktif + "_Soal", indexSoalTerpilih);
         PlayerPrefs.Save();
     }
@@ -157,15 +160,14 @@ public class GameplayManager : MonoBehaviour
     {
         isGameSelesai = true;
         if(scriptTimer != null) scriptTimer.enabled = false; 
+        if (panelPause != null) panelPause.SetActive(false);
         panelKalah.SetActive(true);
     }
 
-    // --- FUNGSI TOMBOL ---
     public void PauseGame()
     {
         if (isGameSelesai) return; 
         panelPause.SetActive(true);
-        Time.timeScale = 0f; 
     }
 
     public void LanjutGame()
@@ -191,6 +193,7 @@ public class GameplayManager : MonoBehaviour
         int levelBaru = levelAktif + 1;
         PlayerPrefs.SetInt("LevelAktif", levelBaru);
         PlayerPrefs.Save();
+        
         Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
