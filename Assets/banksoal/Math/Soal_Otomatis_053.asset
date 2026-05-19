@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_053
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: "Jumlah n suku pertama deret aritmatika adalah Sn = n/2 \xD7 (a
+    + Un). Jika a=1, Un=19, n=10, maka Sn adalah?"
+  pilihanJawaban:
+  - 100
+  - 90
+  - 110
+  - 95
+  indeksJawabanBenar: 0
