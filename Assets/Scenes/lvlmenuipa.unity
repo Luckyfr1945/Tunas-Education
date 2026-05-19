@@ -2017,6 +2017,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelection
   namaSceneGameplay: gameplay_ipa
   namaSceneKembali: Category
+  arrayTombolLevel:
+  - {fileID: 436781179}
+  - {fileID: 1505070090}
+  - {fileID: 802154301}
+  - {fileID: 87694260}
+  - {fileID: 1277053945}
+  - {fileID: 962386640}
+  - {fileID: 2051860706}
+  - {fileID: 517660775}
+  - {fileID: 541443226}
+  - {fileID: 944303117}
+  - {fileID: 944303117}
+  - {fileID: 1856952109}
+  - {fileID: 1835377990}
+  - {fileID: 386773359}
+  - {fileID: 1574851016}
+  - {fileID: 1190131265}
+  - {fileID: 1757438771}
+  - {fileID: 1720040928}
+  - {fileID: 817932318}
+  - {fileID: 2010844819}
+  - {fileID: 1347700537}
+  warnaSelesai: {r: 0.1792453, g: 0.15979888, b: 0.15979888, a: 1}
+  warnaBelum: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &639050504
 Transform:
   m_ObjectHideFlags: 0
