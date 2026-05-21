@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_142
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Temanmu mengaku ahli gizi kebugaran tubuh karena sering baca thread
+    di Twitter, tapi dia sendiri sarapan pagi pakai mi instan double dicampur nasi
+    putih plus kerupuk. Status keahliannya?
+  pilihanJawaban:
+  - Konsultan nutrisi kasual media sosial
+  - Pakar karbohidrat tingkat tinggi rukun tetangga
+  - Siswa peduli pola makan sehat
+  - Korban misinformasi kesehatan internet
+  indeksJawabanBenar: 1

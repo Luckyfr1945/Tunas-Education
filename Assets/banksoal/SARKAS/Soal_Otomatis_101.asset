@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_101
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Seseorang mengendarai mobil mewah keluaran terbaru tapi enggan
+    membayar tarif tol Rp5.000 dan malah memaksa nempel mobil depan agar gratis.
+    Dia menderita?
+  pilihanJawaban:
+  - Kemiskinan mentalitas akut berbalut casing kaya
+  - Kurang saldo kartu e-toll
+  - Sifat hemat yang luar biasa
+  - Krisis keuangan mendadak
+  indeksJawabanBenar: 0

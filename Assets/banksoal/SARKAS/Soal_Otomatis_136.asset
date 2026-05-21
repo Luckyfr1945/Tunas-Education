@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_136
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Ketika melihat spanduk warung bakso bertuliskan 'Bakso Daging Sapi
+    Asli Tanpa Campuran Boraks', tapi tekstur baksonya kenyal membal bisa dipakai
+    main pingpong. Kandungan utamanya?
+  pilihanJawaban:
+  - Daging sapi segar pilihan
+  - Karet ban dalam motor merk fdr campur tepung kanji
+  - Resep rahasia kuliner nusantara
+  - Bahan pengawet aman konsumsi
+  indeksJawabanBenar: 1

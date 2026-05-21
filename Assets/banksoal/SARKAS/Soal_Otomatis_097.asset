@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_097
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Ketika kamu membeli mi ayam seharga Rp5.000 dan potongan daging
+    ayamnya sekecil debu kosmik hingga tidak terlihat mata telanjang. Kalimat pujianmu
+    ke penjual?
+  pilihanJawaban:
+  - Mi ayamnya kurang banyak dagingnya mang.
+  - Luar biasa mang, teknik memotong ayamnya tipis sekelas molekul atom nuklir.
+  - Rasanya enak tapi porsinya sedikit.
+  - Besok-besok potongan dagingnya diganti yang besar ya mang.
+  indeksJawabanBenar: 1

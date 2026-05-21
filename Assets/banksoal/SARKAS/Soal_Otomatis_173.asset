@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_173
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Ketika melihat logo instansi pelayanan kesehatan masyarakat bertuliskan
+    'Kesehatan Pasien Adalah Prioritas Utama Kami', tapi pendaftaran antrean berbelit-belit
+    butuh 15 lembar berkas fotokopi ktp. Prioritas utamanya adalah?
+  pilihanJawaban:
+  - Sistem penanganan medis darurat cepat tanggap profesional kesehatan
+  - Gerakan nasional pelestarian industri kertas fotokopi berkas administrasi negara
+  - Pelayanan administrasi rumah sakit kurang efisien pendaftaran pasien
+  - Sistem manajemen data kesehatan pasien berbasis berkas dokumen fisik
+  indeksJawabanBenar: 1

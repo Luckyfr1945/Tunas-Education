@@ -24,10 +24,10 @@ public class ImportSoalJSON : MonoBehaviour
     public static void ImportSoal()
     {
         // Ganti path ini sesuai lokasi kamu menaruh file JSON di Unity
-        string pathJSON = "Assets/banksoal/Math/soal_math.json"; 
+        string pathJSON = "Assets/banksoal/SARKAS/soalsarkes.json"; 
         
         // Folder tujuan tempat file .asset akan dicetak (pastikan foldernya sudah kamu buat!)
-        string folderTujuan = "Assets/banksoal/math/";
+        string folderTujuan = "Assets/banksoal/SARKAS/";
 
         if (!File.Exists(pathJSON))
         {

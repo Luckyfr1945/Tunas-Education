@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_083
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Melihat segerombolan orang yang nongkrong di kafe mahal berjam-jam
+    tapi cuma memesan satu gelas es teh manis botolan dibagi bertiga. Sarkas pemilik
+    kafe?
+  pilihanJawaban:
+  - Terima kasih sudah meramaikan kafe kami sampai modal sewa ruko kami terancam.
+  - Kalian pelit sekali, pesan makanan dong!
+  - Silakan nongkrong sepuasnya ya kak.
+  - Besok-besok pesan satu-satu ya minumnya.
+  indeksJawabanBenar: 0
