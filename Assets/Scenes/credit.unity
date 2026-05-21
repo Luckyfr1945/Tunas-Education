@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 134222292}
   - component: {fileID: 134222294}
   - component: {fileID: 134222293}
+  - component: {fileID: 134222295}
   m_Layer: 5
   m_Name: Panel_ContentSound
   m_TagString: Untagged
@@ -350,6 +351,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134222291}
   m_CullTransparentMesh: 1
+--- !u!114 &134222295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134222291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.64705884}
+  m_EffectDistance: {x: 20, y: -25}
+  m_UseGraphicAlpha: 1
 --- !u!1 &215686791
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +414,7 @@ GameObject:
   - component: {fileID: 239881928}
   - component: {fileID: 239881927}
   - component: {fileID: 239881926}
+  - component: {fileID: 239881929}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -424,8 +441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.9103, y: -3.3702}
-  m_SizeDelta: {x: 1209.8, y: 629.1464}
+  m_AnchoredPosition: {x: -3.4239, y: -3.3702}
+  m_SizeDelta: {x: 1210.8274, y: 629.1464}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239881926
 MonoBehaviour:
@@ -470,14 +487,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1267768732669733636, guid: 251b02ce61df5e1d581fe5c0e39ff29e, type: 3}
+  m_Sprite: {fileID: 3270704173126307395, guid: da65b315a689056c588297b5b85f6ab4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -495,6 +512,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239881924}
   m_CullTransparentMesh: 1
+--- !u!114 &239881929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239881924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 10, y: -15}
+  m_UseGraphicAlpha: 1
 --- !u!1 &643929674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1107,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1698138496}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1153,7 +1185,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1192.8, y: 0}
+  m_SizeDelta: {x: 1193.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490564535
 MonoBehaviour:
@@ -1175,21 +1207,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center>\n<size=150%><b>TUNAS EDUCATION</b></size>\n<size=80%><i>Premium
-    Quiz Game</i></size>\n\n<line-height=150%>\n\n<color=#FFA500><size=120%><b>\u2014
-    DEVELOPMENT TEAM \u2014</b></size></color>\n\n<b>Kiki</b>\n<i>Lead Developer
-    / Programmer</i>\n\n<b>Mbin</b>\n<i>Developer / Designer</i>\n\n<b>Tyas</b>\n<i>Developer</i>\n\n<b>Dewi</b>\n<i>Developer</i>\n\n<b>Arin</b>\n<i>Developer</i>\n\n\n<color=#FFA500><size=120%><b>\u2014
-    TECHNOLOGY & TOOLS \u2014</b></size></color>\n\n<b>Game Engine</b>\nUnity 2021.3
-    LTS\n\n<b>Programming Language</b>\nC# (.NET Standard 2.1)\n\n<b>Rendering &
-    UI</b>\nUniversal Render Pipeline (URP)\nHigh Fidelity Glassmorphism UI\n\n\n<color=#FFA500><size=120%><b>\u2014
-    ABOUT THE PROJECT \u2014</b></size></color>\n\n<size=90%>Tunas Education adalah
-    platform kuis interaktif yang menggabungkan desain modern bergaya \"Glassmorphism\"
-    dengan pengalaman belajar yang menyenangkan (gamified). Project ini dirancang
-    dengan performa tinggi untuk mendukung kemudahan kustomisasi konten edukasi.</size>\n\n\n<color=#FFA500><size=120%><b>\u2014
-    SPECIAL THANKS TO \u2014</b></size></color>\n\n<b>SMK Tunas Harapan Pati</b>\nSerta
-    seluruh pihak yang telah mendukung pengembangan project ini.\n\n\n<size=70%><i>Dilisensikan
-    di bawah MIT License</i></size>\n<size=70%><i>\xA9 2024 Tunas Education Team.
-    All Rights Reserved.</i></size>\n</align>\n"
+  m_text: "<align=\"center\">\r\n<size=150%><b>TUNAS EDUCATION</b></size>\r\n<size=80%><i>Premium
+    Quiz Game</i></size>\r\n\r\n<line-height=150%>\r\n\r\n<color=#FFA500><size=120%><b>\u2014
+    DEVELOPMENT TEAM \u2014</b></size></color>\r\n\r\n<b>Kiki</b>\r\n<i>Lead Developer
+    / Programmer</i>\r\n\r\n<b>Mbin</b>\r\n<i>Developer / UI Designer</i>\r\n\r\n<b>Tyas</b>\r\n<i>Developer</i>\r\n\r\n<b>Dewi</b>\r\n<i>Developer</i>\r\n\r\n<b>Arin</b>\r\n<i>Developer</i>\r\n\r\n\r\n<line-height=120%>\r\n<color=#FFA500><size=120%><b>\u2014
+    TECHNOLOGY & TOOLS \u2014</b></size></color>\r\n\r\n<b>Game Engine</b>\r\nUnity
+    2021.3 LTS\r\n\r\n<b>Programming Language</b>\r\nC# (.NET Standard 2.1)\r\n\r\n<b>Rendering
+    & UI</b>\r\nUniversal Render Pipeline (URP)\r\nGlassmorphism User Interface\r\n\r\n\r\n<align=\"center\">\r\n<color=#FFA500><size=120%><b>\u2014
+    ABOUT THE PROJECT \u2014</b></size></color>\r\n\r\n<line-height=120%>\r\n\r\n<size=90%>\r\nTunas
+    Education adalah game kuis edukasi interaktif yang\r\nmenggabungkan desain modern
+    bergaya Glassmorphism\r\ndengan pengalaman belajar yang menyenangkan melalui\r\nsistem
+    gamifikasi.\r\n\r\nProject ini dirancang dengan performa tinggi dan\r\nstruktur
+    yang fleksibel agar mudah dikembangkan dan\r\ndikustomisasi untuk berbagai materi
+    pembelajaran.\r\n</size>\r\n</align>\r\n\r\n\r\n<line-height=120%>\r\n<color=#FFA500><size=120%><b>\u2014
+    SPECIAL THANKS TO \u2014</b></size></color>\r\n\r\n<b>SMK Tunas Harapan Pati</b>\r\n\r\nSerta
+    seluruh guru, teman, dan pihak yang telah mendukung\r\npengembangan project ini.\r\n\r\n\r\n<line-height=120%>\r\n<size=70%><i>Dilisensikan
+    di bawah MIT License</i></size>\r\n\r\n<size=70%><i>\xA9 2026 Tunas Education
+    Team. All Rights Reserved.</i></size>\r\n</align>\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1574,8 +1608,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1903365842}
   m_HandleRect: {fileID: 1903365841}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.19152738
+  m_Value: 0.99999994
+  m_Size: 0.16802345
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
