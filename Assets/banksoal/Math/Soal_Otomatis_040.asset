@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Dari 5 orang akan dipilih 2 orang sebagai ketua dan wakil. Banyak
     cara pemilihan adalah?
   pilihanJawaban:
-  - 20
+  - 15
   - 10
   - 5
-  - 15
-  indeksJawabanBenar: 0
+  - 20
+  indeksJawabanBenar: 3

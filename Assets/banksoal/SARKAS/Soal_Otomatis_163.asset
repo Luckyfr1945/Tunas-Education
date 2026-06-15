@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_163
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Ada orang yang hobi mengeluh tugas kuliahnya menumpuk bikin stres
+    mau gila di twitter tiap menit, padahal dari pagi kerjaannya cuma rebahan nonton
+    live streaming game di youtube. Aktivitas produktif dia adalah?
+  pilihanJawaban:
+  - Mahasiswa rajin pemburu ilmu pengetahuan digital modern
+  - Manusia produktif pengamat pergerakan kasur kamar tidur utama
+  - Pelajar tertekan beban sistem kurikulum pendidikan nasional
+  - Siswa kasual pengisi waktu luang liburan semester sekolah
+  indeksJawabanBenar: 1

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai diskriminan dari persamaan 2x\xB2 - 4x + 2 = 0 adalah?"
   pilihanJawaban:
-  - 0
   - 8
   - 16
   - -8
-  indeksJawabanBenar: 0
+  - 0
+  indeksJawabanBenar: 3

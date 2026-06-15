@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Nilai dari \u222B cos x dx adalah?"
   pilihanJawaban:
   - sin x + C
-  - -sin x + C
-  - cos x + C
   - -cos x + C
+  - cos x + C
+  - -sin x + C
   indeksJawabanBenar: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Dot product dari vektor (1, 2) dan (3, 4) adalah?
   pilihanJawaban:
-  - 11
   - 10
-  - 14
   - 7
-  indeksJawabanBenar: 0
+  - 11
+  - 14
+  indeksJawabanBenar: 2

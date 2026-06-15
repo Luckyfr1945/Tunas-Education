@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Luas permukaan tabung dengan jari-jari 7 cm dan tinggi 10 cm (\u03C0
     = 22/7) adalah?"
   pilihanJawaban:
-  - "748 cm\xB2"
-  - "440 cm\xB2"
   - "308 cm\xB2"
+  - "440 cm\xB2"
   - "154 cm\xB2"
-  indeksJawabanBenar: 0
+  - "748 cm\xB2"
+  indeksJawabanBenar: 3

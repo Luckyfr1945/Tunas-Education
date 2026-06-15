@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_150
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Kamu membeli earphone bluetooth super murah seharga Rp5.000 di
+    pasar maling, pas dicoba suaranya kresek-kresek sekelas frekuensi radio komunikasi
+    kapal selam karam. Kualitas audionya?
+  pilihanJawaban:
+  - Audio standar kasual pendengar musik
+  - Simulasi efek suara perang dunia pertama sektor parit pertahanan
+  - Earphone hp rusak cacat produksi pabrik
+  - Kurang cocok dengan bass lagu modern
+  indeksJawabanBenar: 1

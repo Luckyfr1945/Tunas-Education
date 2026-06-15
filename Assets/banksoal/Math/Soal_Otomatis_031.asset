@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jika vektor a = (3, 4), maka |a| (panjang vektor a) adalah?
   pilihanJawaban:
-  - 5
-  - 7
   - 12
+  - 5
   - 25
-  indeksJawabanBenar: 0
+  - 7
+  indeksJawabanBenar: 1

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Ordo matriks yang memiliki 3 baris dan 4 kolom adalah?
   pilihanJawaban:
-  - "3 \xD7 4"
   - "4 \xD7 3"
-  - "12 \xD7 1"
   - 3 + 4
-  indeksJawabanBenar: 0
+  - "3 \xD7 4"
+  - "12 \xD7 1"
+  indeksJawabanBenar: 2

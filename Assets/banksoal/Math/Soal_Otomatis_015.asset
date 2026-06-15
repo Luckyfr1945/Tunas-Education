@@ -16,6 +16,6 @@ MonoBehaviour:
   pilihanJawaban:
   - 4
   - 2
-  - 8
   - 16
+  - 8
   indeksJawabanBenar: 0

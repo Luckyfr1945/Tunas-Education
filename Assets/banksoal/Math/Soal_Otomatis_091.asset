@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Rumus kuadratik (rumus ABC) untuk akar persamaan ax\xB2 + bx +
     c = 0 adalah?"
   pilihanJawaban:
-  - "x = (-b \xB1 \u221A(b\xB2-4ac)) / 2a"
-  - "x = (b \xB1 \u221A(b\xB2-4ac)) / 2a"
-  - "x = (-b \xB1 \u221A(b\xB2+4ac)) / 2a"
   - x = -b / 2a
-  indeksJawabanBenar: 0
+  - "x = (-b \xB1 \u221A(b\xB2-4ac)) / 2a"
+  - "x = (-b \xB1 \u221A(b\xB2+4ac)) / 2a"
+  - "x = (b \xB1 \u221A(b\xB2-4ac)) / 2a"
+  indeksJawabanBenar: 1

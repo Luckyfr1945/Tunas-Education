@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Konjugat dari bilangan kompleks (3 + 4i) adalah?
   pilihanJawaban:
-  - 3 - 4i
-  - -3 + 4i
   - -3 - 4i
+  - 3 - 4i
   - 3 + 4i
-  indeksJawabanBenar: 0
+  - -3 + 4i
+  indeksJawabanBenar: 1

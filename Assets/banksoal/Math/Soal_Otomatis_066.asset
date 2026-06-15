@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Volume kerucut dengan jari-jari alas 3 cm dan tinggi 4 cm adalah?
   pilihanJawaban:
-  - "12\u03C0 cm\xB3"
-  - "36\u03C0 cm\xB3"
   - "9\u03C0 cm\xB3"
+  - "36\u03C0 cm\xB3"
+  - "12\u03C0 cm\xB3"
   - "48\u03C0 cm\xB3"
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

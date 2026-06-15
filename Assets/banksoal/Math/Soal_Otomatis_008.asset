@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Bentuk sederhana dari (x\xB2 - 9) / (x - 3) untuk x \u2260 3 adalah?"
   pilihanJawaban:
-  - x + 3
   - x - 3
-  - "x\xB2 + 3"
   - x + 9
-  indeksJawabanBenar: 0
+  - x + 3
+  - "x\xB2 + 3"
+  indeksJawabanBenar: 2

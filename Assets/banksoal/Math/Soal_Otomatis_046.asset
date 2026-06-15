@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Suku ke-10 dari barisan aritmatika 2, 5, 8, 11, ... adalah?
   pilihanJawaban:
-  - 29
-  - 26
   - 32
+  - 29
   - 23
-  indeksJawabanBenar: 0
+  - 26
+  indeksJawabanBenar: 1

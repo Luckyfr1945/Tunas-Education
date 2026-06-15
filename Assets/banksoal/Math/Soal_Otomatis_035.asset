@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Vektor nol adalah vektor yang memiliki?
   pilihanJawaban:
-  - Panjang (magnitude) sama dengan 0
   - Arah ke kanan
   - Panjang sama dengan 1
+  - Panjang (magnitude) sama dengan 0
   - Arah ke atas
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_071
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Temanmu minta diajarkan materi matematika dari awal, tapi setiap
+    kamu jelaskan matanya malah fokus main TikTok. Ucapan sarkasmu?
+  pilihanJawaban:
+  - Perhatikan penjelasan saya dong!
+  - Materi di TikTok pasti lebih keluar di ujian besok ya.
+  - Kamu niat belajar atau tidak sih?
+  - Nanti kalau tidak paham jangan salahkan saya ya.
+  indeksJawabanBenar: 1

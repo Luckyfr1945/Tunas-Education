@@ -27,7 +27,7 @@ public class ImportSoalJSON : MonoBehaviour
         string pathJSON = "Assets/banksoal/Math/soal_math.json"; 
         
         // Folder tujuan tempat file .asset akan dicetak (pastikan foldernya sudah kamu buat!)
-        string folderTujuan = "Assets/banksoal/math/";
+        string folderTujuan = "Assets/banksoal/Math/";
 
         if (!File.Exists(pathJSON))
         {

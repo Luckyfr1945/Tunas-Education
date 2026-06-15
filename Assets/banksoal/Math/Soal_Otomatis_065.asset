@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Luas permukaan bola dengan jari-jari r adalah?
   pilihanJawaban:
-  - "4\u03C0r\xB2"
-  - "2\u03C0r\xB2"
-  - "\u03C0r\xB2"
   - "4/3 \u03C0r\xB3"
-  indeksJawabanBenar: 0
+  - "4\u03C0r\xB2"
+  - "\u03C0r\xB2"
+  - "2\u03C0r\xB2"
+  indeksJawabanBenar: 1

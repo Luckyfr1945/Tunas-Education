@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Nilai dari (27)^(-1/3) adalah?
   pilihanJawaban:
-  - 1/3
   - 3
-  - -3
   - -1/3
-  indeksJawabanBenar: 0
+  - 1/3
+  - -3
+  indeksJawabanBenar: 2

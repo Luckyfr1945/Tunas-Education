@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_011
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Saat seseorang mengantre lalu barisannya diserobot oleh emak-emak,
+    reaksi pasrah nan sarkas adalah?
+  pilihanJawaban:
+  - Silakan bu, antrean ini memang milik ras terkuat di bumi.
+  - Hei, jangan menyerobot antrean saya!
+  - Ibu mau saya panggilkan polisi?
+  - Wah, ibu buru-buru ya? Mau ke mana?
+  indeksJawabanBenar: 0

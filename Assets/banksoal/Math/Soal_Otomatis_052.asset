@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Barisan 1, 2, 4, 8, 16, ... memiliki rasio sebesar?
   pilihanJawaban:
-  - 2
   - 1
-  - 4
   - 3
-  indeksJawabanBenar: 0
+  - 4
+  - 2
+  indeksJawabanBenar: 3

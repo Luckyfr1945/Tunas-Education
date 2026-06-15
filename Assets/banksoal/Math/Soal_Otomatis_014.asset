@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Jika log a = 2 dan log b = 3, maka log (a\xB2b) adalah?"
   pilihanJawaban:
-  - 7
-  - 6
   - 8
   - 5
-  indeksJawabanBenar: 0
+  - 6
+  - 7
+  indeksJawabanBenar: 3

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Transpose matriks A = [[1,2],[3,4]] adalah?
   pilihanJawaban:
-  - '[[1,3],[2,4]]'
-  - '[[4,3],[2,1]]'
   - '[[2,1],[4,3]]'
   - '[[1,2],[3,4]]'
-  indeksJawabanBenar: 0
+  - '[[1,3],[2,4]]'
+  - '[[4,3],[2,1]]'
+  indeksJawabanBenar: 2

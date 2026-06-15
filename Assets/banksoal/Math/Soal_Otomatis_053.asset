@@ -16,7 +16,7 @@ MonoBehaviour:
     + Un). Jika a=1, Un=19, n=10, maka Sn adalah?"
   pilihanJawaban:
   - 100
-  - 90
-  - 110
   - 95
+  - 110
+  - 90
   indeksJawabanBenar: 0

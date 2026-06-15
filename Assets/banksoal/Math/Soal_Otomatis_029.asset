@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Grafik y = sin x memiliki periode sebesar?
   pilihanJawaban:
-  - "2\u03C0"
-  - "\u03C0"
-  - "\u03C0/2"
   - "4\u03C0"
-  indeksJawabanBenar: 0
+  - "\u03C0"
+  - "2\u03C0"
+  - "\u03C0/2"
+  indeksJawabanBenar: 2

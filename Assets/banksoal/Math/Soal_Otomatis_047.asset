@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Suku pertama barisan geometri adalah 3 dan rasio 2. Suku ke-5 adalah?
   pilihanJawaban:
-  - 48
+  - 12
   - 24
   - 96
-  - 12
-  indeksJawabanBenar: 0
+  - 48
+  indeksJawabanBenar: 3

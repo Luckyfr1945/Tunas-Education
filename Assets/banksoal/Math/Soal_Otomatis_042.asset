@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Peluang kejadian yang pasti terjadi adalah?
   pilihanJawaban:
-  - 1
-  - 0
   - 0,5
+  - 0
+  - 1
   - Tak terhingga
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

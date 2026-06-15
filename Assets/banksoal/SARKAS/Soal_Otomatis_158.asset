@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_158
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Ketika melihat papan rambu jalan bertuliskan 'Kawasan Tertib Berlalu
+    Lintas Bebas Pelanggaran', tapi di depannya berjejer pengendara motor melawan
+    arus tanpa pakai helm pelindung. Kondisi areanya?
+  pilihanJawaban:
+  - Kawasan disiplin berkendara pantauan aparat kepolisian
+  - Simulasi arena game gta dunia nyata sektor kearifan lokal
+  - Kurang pengawasan petugas keamanan lalu lintas jalan
+  - Kawasan rawan pelanggaran pengendara motor kasual
+  indeksJawabanBenar: 1

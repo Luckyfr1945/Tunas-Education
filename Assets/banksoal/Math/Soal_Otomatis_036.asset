@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Rata-rata (mean) dari data 4, 6, 8, 10, 12 adalah?
   pilihanJawaban:
-  - 8
   - 6
   - 10
   - 7
-  indeksJawabanBenar: 0
+  - 8
+  indeksJawabanBenar: 3

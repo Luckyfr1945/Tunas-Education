@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Jika P(A) = 0,4 dan A serta B saling bebas dengan P(B) = 0,5,
     maka P(A\u2229B) adalah?"
   pilihanJawaban:
-  - 0,2
-  - 0,9
-  - 0,45
   - 0,1
-  indeksJawabanBenar: 0
+  - 0,2
+  - 0,45
+  - 0,9
+  indeksJawabanBenar: 1

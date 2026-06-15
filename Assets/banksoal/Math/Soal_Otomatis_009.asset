@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Nilai maksimum dari f(x) = -x\xB2 + 4x + 5 adalah?"
   pilihanJawaban:
   - 9
-  - 5
   - 4
+  - 5
   - 8
   indeksJawabanBenar: 0

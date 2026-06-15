@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Bayangan titik A(3, -2) setelah dicerminkan terhadap sumbu X adalah?
   pilihanJawaban:
-  - (3, 2)
-  - (-3, -2)
-  - (-3, 2)
   - (3, -2)
-  indeksJawabanBenar: 0
+  - (-3, -2)
+  - (3, 2)
+  - (-3, 2)
+  indeksJawabanBenar: 2

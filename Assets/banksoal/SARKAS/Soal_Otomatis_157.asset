@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_157
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Temanmu berjanji mengembalikan laptop pinjamannya dalam kondisi
+    bersih rapi instalasi seperti semula, pas dibalikin windowsnya kena virus ransomware
+    data terkunci semua. Hasil perawatan laptopnya?
+  pilihanJawaban:
+  - Selesai instalasi pembaruan keamanan windows berkala
+  - Sukses merusak sistem operasi laptop jalur download web terlarang
+  - Kurang paham cara operasional sistem komputer laptop
+  - Laptopnya tidak sengaja terkena virus malware internet
+  indeksJawabanBenar: 1

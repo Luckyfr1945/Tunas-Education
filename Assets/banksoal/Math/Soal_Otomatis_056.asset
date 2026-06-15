@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Limit dari (x\xB2 - 4)/(x - 2) saat x mendekati 2 adalah?"
   pilihanJawaban:
   - 4
+  - Tidak ada
   - 2
   - 0
-  - Tidak ada
   indeksJawabanBenar: 0

@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Persamaan garis yang melalui titik (2, 3) dan sejajar dengan garis
     y = 2x + 1 adalah?
   pilihanJawaban:
-  - y = 2x - 1
-  - y = 2x + 7
   - "y = -\xBDx + 4"
+  - y = 2x + 7
+  - y = 2x - 1
   - y = 2x + 1
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

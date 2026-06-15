@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Jika f(x) = 3x - 2, maka f\u207B\xB9(x) adalah?"
   pilihanJawaban:
-  - (x + 2) / 3
   - (x - 2) / 3
-  - 3x + 2
   - (x + 3) / 2
-  indeksJawabanBenar: 0
+  - 3x + 2
+  - (x + 2) / 3
+  indeksJawabanBenar: 3

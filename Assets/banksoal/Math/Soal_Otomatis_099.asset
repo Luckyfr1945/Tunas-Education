@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Suatu fungsi f(x) dikatakan genap jika?
   pilihanJawaban:
-  - f(-x) = f(x) untuk semua x
-  - f(-x) = -f(x) untuk semua x
-  - f(x) > 0
   - f(x) = 0
-  indeksJawabanBenar: 0
+  - f(-x) = -f(x) untuk semua x
+  - f(-x) = f(x) untuk semua x
+  - f(x) > 0
+  indeksJawabanBenar: 2

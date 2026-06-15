@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Jika tabungan awal Rp 1.000.000 dengan bunga majemuk 10% per tahun,
     nilai setelah 2 tahun adalah?
   pilihanJawaban:
-  - Rp 1.210.000
   - Rp 1.200.000
-  - Rp 1.100.000
   - Rp 1.250.000
-  indeksJawabanBenar: 0
+  - Rp 1.100.000
+  - Rp 1.210.000
+  indeksJawabanBenar: 3

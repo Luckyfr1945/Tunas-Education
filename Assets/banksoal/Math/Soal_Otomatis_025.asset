@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai sin 90\xB0 adalah?"
   pilihanJawaban:
+  - -1
   - 1
   - 0
-  - -1
   - "\u221A2/2"
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

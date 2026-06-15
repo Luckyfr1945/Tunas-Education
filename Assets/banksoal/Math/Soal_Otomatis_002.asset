@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Himpunan penyelesaian dari |2x - 4| = 6 adalah?
   pilihanJawaban:
+  - '{-5, 1}'
+  - '{5, -1}'
   - '{-1, 5}'
   - '{1, -5}'
-  - '{5, -1}'
-  - '{-5, 1}'
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

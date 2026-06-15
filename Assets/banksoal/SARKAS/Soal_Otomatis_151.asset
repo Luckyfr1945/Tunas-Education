@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
+  m_Name: Soal_Otomatis_151
+  m_EditorClassIdentifier: Assembly-CSharp::DataSoal
+  teksPertanyaan: Melihat influencer kecantikan mengunggah video tutorial skin care
+    wajah glowing natural alami, tapi di balik layarnya pakai filter kecantikan level
+    maksimal 100%. Rahasia glowingnya adalah?
+  pilihanJawaban:
+  - Asupan vitamin kulit bergizi pilihan
+  - Keajaiban algoritma pemrosesan filter gpu smartphone canggih
+  - Produk kosmetik kecantikan merk ternama internasional
+  - Perawatan dokter ahli kecantikan wajah berkala
+  indeksJawabanBenar: 1

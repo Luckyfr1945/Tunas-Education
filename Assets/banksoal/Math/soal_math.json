@@ -3,89 +3,89 @@
         {
             "teksPertanyaan": "Hasil dari (2x + 3)(x - 5) adalah?",
             "pilihanJawaban": [
-                "2x\u00b2 - 7x - 15",
-                "2x\u00b2 + 7x - 15",
-                "2x\u00b2 - 10x - 15",
-                "2x\u00b2 - 7x + 15"
+                "2x² - 10x - 15",
+                "2x² + 7x - 15",
+                "2x² - 7x + 15",
+                "2x² - 7x - 15"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Himpunan penyelesaian dari |2x - 4| = 6 adalah?",
             "pilihanJawaban": [
-                "{-1, 5}",
-                "{1, -5}",
+                "{-5, 1}",
                 "{5, -1}",
-                "{-5, 1}"
+                "{-1, 5}",
+                "{1, -5}"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Jika f(x) = 3x - 2, maka f\u207b\u00b9(x) adalah?",
+            "teksPertanyaan": "Jika f(x) = 3x - 2, maka f⁻¹(x) adalah?",
             "pilihanJawaban": [
-                "(x + 2) / 3",
                 "(x - 2) / 3",
+                "(x + 3) / 2",
                 "3x + 2",
-                "(x + 3) / 2"
+                "(x + 2) / 3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Akar-akar persamaan x\u00b2 - 5x + 6 = 0 adalah?",
+            "teksPertanyaan": "Akar-akar persamaan x² - 5x + 6 = 0 adalah?",
             "pilihanJawaban": [
-                "x = 2 dan x = 3",
                 "x = -2 dan x = -3",
                 "x = 1 dan x = 6",
+                "x = 2 dan x = 3",
                 "x = -1 dan x = -6"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Nilai diskriminan dari persamaan 2x\u00b2 - 4x + 2 = 0 adalah?",
+            "teksPertanyaan": "Nilai diskriminan dari persamaan 2x² - 4x + 2 = 0 adalah?",
             "pilihanJawaban": [
-                "0",
                 "8",
                 "16",
-                "-8"
+                "-8",
+                "0"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Jika f(x) = x\u00b2 + 1 dan g(x) = 2x - 3, maka (f\u2218g)(x) adalah?",
+            "teksPertanyaan": "Jika f(x) = x² + 1 dan g(x) = 2x - 3, maka (f∘g)(x) adalah?",
             "pilihanJawaban": [
-                "4x\u00b2 - 12x + 10",
-                "2x\u00b2 - 1",
-                "4x\u00b2 + 12x + 10",
-                "2x\u00b2 + 2x - 2"
+                "2x² - 1",
+                "2x² + 2x - 2",
+                "4x² + 12x + 10",
+                "4x² - 12x + 10"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Persamaan garis yang melalui titik (2, 3) dan sejajar dengan garis y = 2x + 1 adalah?",
             "pilihanJawaban": [
-                "y = 2x - 1",
+                "y = -½x + 4",
                 "y = 2x + 7",
-                "y = -\u00bdx + 4",
+                "y = 2x - 1",
                 "y = 2x + 1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Bentuk sederhana dari (x\u00b2 - 9) / (x - 3) untuk x \u2260 3 adalah?",
+            "teksPertanyaan": "Bentuk sederhana dari (x² - 9) / (x - 3) untuk x ≠ 3 adalah?",
             "pilihanJawaban": [
-                "x + 3",
                 "x - 3",
-                "x\u00b2 + 3",
-                "x + 9"
+                "x + 9",
+                "x + 3",
+                "x² + 3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Nilai maksimum dari f(x) = -x\u00b2 + 4x + 5 adalah?",
+            "teksPertanyaan": "Nilai maksimum dari f(x) = -x² + 4x + 5 adalah?",
             "pilihanJawaban": [
                 "9",
-                "5",
                 "4",
+                "5",
                 "8"
             ],
             "indeksJawabanBenar": 0
@@ -93,105 +93,105 @@
         {
             "teksPertanyaan": "Sistem persamaan: 2x + y = 7 dan x - y = 2. Nilai x adalah?",
             "pilihanJawaban": [
-                "3",
-                "2",
                 "1",
-                "4"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Nilai dari 2\u00b3 \u00d7 2\u2074 adalah?",
-            "pilihanJawaban": [
-                "128",
-                "64",
-                "256",
-                "32"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Bentuk sederhana dari (a\u00b3b\u00b2)\u00b2 adalah?",
-            "pilihanJawaban": [
-                "a\u2076b\u2074",
-                "a\u2075b\u2074",
-                "a\u2076b\u00b2",
-                "a\u00b3b\u2074"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Nilai dari log\u2082 32 adalah?",
-            "pilihanJawaban": [
-                "5",
                 "4",
-                "6",
-                "3"
+                "3",
+                "2"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Jika log a = 2 dan log b = 3, maka log (a\u00b2b) adalah?",
+            "teksPertanyaan": "Nilai dari 2³ × 2⁴ adalah?",
             "pilihanJawaban": [
-                "7",
-                "6",
-                "8",
-                "5"
+                "256",
+                "64",
+                "32",
+                "128"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
+        },
+        {
+            "teksPertanyaan": "Bentuk sederhana dari (a³b²)² adalah?",
+            "pilihanJawaban": [
+                "a³b⁴",
+                "a⁶b²",
+                "a⁵b⁴",
+                "a⁶b⁴"
+            ],
+            "indeksJawabanBenar": 3
+        },
+        {
+            "teksPertanyaan": "Nilai dari log₂ 32 adalah?",
+            "pilihanJawaban": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "indeksJawabanBenar": 2
+        },
+        {
+            "teksPertanyaan": "Jika log a = 2 dan log b = 3, maka log (a²b) adalah?",
+            "pilihanJawaban": [
+                "8",
+                "5",
+                "6",
+                "7"
+            ],
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Nilai dari 8^(2/3) adalah?",
             "pilihanJawaban": [
                 "4",
                 "2",
-                "8",
-                "16"
+                "16",
+                "8"
             ],
             "indeksJawabanBenar": 0
         },
         {
             "teksPertanyaan": "Persamaan 3^(x+1) = 27 memiliki penyelesaian x = ?",
             "pilihanJawaban": [
+                "4",
                 "2",
-                "3",
                 "1",
-                "4"
+                "3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Sederhanakan: log 100 + log 10 (basis 10)?",
             "pilihanJawaban": [
-                "3",
                 "2",
+                "1",
                 "4",
-                "1"
+                "3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Nilai dari (27)^(-1/3) adalah?",
             "pilihanJawaban": [
-                "1/3",
                 "3",
-                "-3",
-                "-1/3"
+                "-1/3",
+                "1/3",
+                "-3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Jika 2^x = 16, maka nilai x adalah?",
             "pilihanJawaban": [
-                "4",
-                "3",
+                "2",
                 "5",
-                "2"
+                "3",
+                "4"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Bentuk log\u2085 125 sama dengan?",
+            "teksPertanyaan": "Bentuk log₅ 125 sama dengan?",
             "pilihanJawaban": [
                 "3",
                 "5",
@@ -201,101 +201,101 @@
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Nilai dari sin 30\u00b0 adalah?",
+            "teksPertanyaan": "Nilai dari sin 30° adalah?",
             "pilihanJawaban": [
                 "1/2",
-                "\u221a2/2",
-                "\u221a3/2",
+                "√3/2",
+                "1",
+                "√2/2"
+            ],
+            "indeksJawabanBenar": 0
+        },
+        {
+            "teksPertanyaan": "Nilai dari cos 60° adalah?",
+            "pilihanJawaban": [
+                "1/2",
+                "0",
+                "√2/2",
+                "√3/2"
+            ],
+            "indeksJawabanBenar": 0
+        },
+        {
+            "teksPertanyaan": "Nilai dari tan 45° adalah?",
+            "pilihanJawaban": [
+                "√3",
+                "√2",
+                "1/√3",
                 "1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Nilai dari cos 60\u00b0 adalah?",
+            "teksPertanyaan": "Identitas trigonometri sin²x + cos²x sama dengan?",
             "pilihanJawaban": [
-                "1/2",
-                "\u221a3/2",
-                "\u221a2/2",
+                "sin 2x",
+                "2",
+                "1",
                 "0"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Nilai dari tan 45\u00b0 adalah?",
+            "teksPertanyaan": "Nilai sin 90° adalah?",
             "pilihanJawaban": [
-                "1",
-                "\u221a3",
-                "1/\u221a3",
-                "\u221a2"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Identitas trigonometri sin\u00b2x + cos\u00b2x sama dengan?",
-            "pilihanJawaban": [
-                "1",
-                "0",
-                "sin 2x",
-                "2"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Nilai sin 90\u00b0 adalah?",
-            "pilihanJawaban": [
-                "1",
-                "0",
                 "-1",
-                "\u221a2/2"
+                "1",
+                "0",
+                "√2/2"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Rumus sudut ganda sin 2x sama dengan?",
             "pilihanJawaban": [
+                "sin²x - cos²x",
+                "cos²x - sin²x",
                 "2 sin x cos x",
-                "sin\u00b2x - cos\u00b2x",
-                "2 sin\u00b2x",
-                "cos\u00b2x - sin\u00b2x"
+                "2 sin²x"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Dalam segitiga siku-siku, sin \u03b8 = sisi depan dibagi?",
+            "teksPertanyaan": "Dalam segitiga siku-siku, sin θ = sisi depan dibagi?",
             "pilihanJawaban": [
-                "Sisi miring (hipotenusa)",
-                "Sisi samping",
+                "Luas segitiga",
                 "Sisi depan",
-                "Luas segitiga"
+                "Sisi samping",
+                "Sisi miring (hipotenusa)"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Nilai dari cos 0\u00b0 adalah?",
+            "teksPertanyaan": "Nilai dari cos 0° adalah?",
             "pilihanJawaban": [
-                "1",
                 "0",
-                "-1",
-                "\u221a3/2"
+                "√3/2",
+                "1",
+                "-1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Grafik y = sin x memiliki periode sebesar?",
             "pilihanJawaban": [
-                "2\u03c0",
-                "\u03c0",
-                "\u03c0/2",
-                "4\u03c0"
+                "4π",
+                "π",
+                "2π",
+                "π/2"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Aturan sinus menyatakan bahwa a/sin A = b/sin B = ?",
             "pilihanJawaban": [
                 "c/sin C",
                 "c/cos C",
-                "c \u00d7 sin C",
+                "c × sin C",
                 "sin C/c"
             ],
             "indeksJawabanBenar": 0
@@ -303,20 +303,20 @@
         {
             "teksPertanyaan": "Jika vektor a = (3, 4), maka |a| (panjang vektor a) adalah?",
             "pilihanJawaban": [
-                "5",
-                "7",
                 "12",
-                "25"
+                "5",
+                "25",
+                "7"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Hasil dari vektor (2, 3) + (4, -1) adalah?",
             "pilihanJawaban": [
                 "(6, 2)",
-                "(6, -2)",
+                "(8, 3)",
                 "(2, 4)",
-                "(8, 3)"
+                "(6, -2)"
             ],
             "indeksJawabanBenar": 0
         },
@@ -333,49 +333,49 @@
         {
             "teksPertanyaan": "Dot product dari vektor (1, 2) dan (3, 4) adalah?",
             "pilihanJawaban": [
-                "11",
                 "10",
-                "14",
-                "7"
+                "7",
+                "11",
+                "14"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Vektor nol adalah vektor yang memiliki?",
             "pilihanJawaban": [
-                "Panjang (magnitude) sama dengan 0",
                 "Arah ke kanan",
                 "Panjang sama dengan 1",
+                "Panjang (magnitude) sama dengan 0",
                 "Arah ke atas"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Rata-rata (mean) dari data 4, 6, 8, 10, 12 adalah?",
             "pilihanJawaban": [
-                "8",
                 "6",
                 "10",
-                "7"
+                "7",
+                "8"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Median dari data 3, 5, 7, 9, 11 adalah?",
             "pilihanJawaban": [
-                "7",
                 "5",
+                "7",
                 "9",
                 "8"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Modus dari data 2, 3, 3, 4, 5, 5, 5, 6 adalah?",
             "pilihanJawaban": [
                 "5",
-                "3",
                 "4",
+                "3",
                 "6"
             ],
             "indeksJawabanBenar": 0
@@ -383,180 +383,180 @@
         {
             "teksPertanyaan": "Peluang munculnya angka genap saat melempar dadu adalah?",
             "pilihanJawaban": [
-                "1/2",
                 "1/3",
-                "2/3",
-                "1/6"
+                "1/2",
+                "1/6",
+                "2/3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Dari 5 orang akan dipilih 2 orang sebagai ketua dan wakil. Banyak cara pemilihan adalah?",
             "pilihanJawaban": [
-                "20",
+                "15",
                 "10",
                 "5",
-                "15"
+                "20"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Kombinasi C(6,2) sama dengan?",
             "pilihanJawaban": [
-                "15",
+                "6",
                 "12",
-                "30",
-                "6"
+                "15",
+                "30"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Peluang kejadian yang pasti terjadi adalah?",
             "pilihanJawaban": [
-                "1",
-                "0",
                 "0,5",
+                "0",
+                "1",
                 "Tak terhingga"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Simpangan baku (standar deviasi) mengukur?",
             "pilihanJawaban": [
-                "Sebaran data dari rata-rata",
+                "Selisih nilai terbesar dan terkecil",
                 "Nilai tengah data",
                 "Nilai yang paling sering muncul",
-                "Selisih nilai terbesar dan terkecil"
+                "Sebaran data dari rata-rata"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Jika P(A) = 0,4 dan A serta B saling bebas dengan P(B) = 0,5, maka P(A\u2229B) adalah?",
+            "teksPertanyaan": "Jika P(A) = 0,4 dan A serta B saling bebas dengan P(B) = 0,5, maka P(A∩B) adalah?",
             "pilihanJawaban": [
+                "0,1",
                 "0,2",
-                "0,9",
                 "0,45",
-                "0,1"
+                "0,9"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Permutasi P(5,3) sama dengan?",
             "pilihanJawaban": [
-                "60",
                 "20",
-                "10",
-                "30"
+                "60",
+                "30",
+                "10"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Suku ke-10 dari barisan aritmatika 2, 5, 8, 11, ... adalah?",
             "pilihanJawaban": [
-                "29",
-                "26",
                 "32",
-                "23"
+                "29",
+                "23",
+                "26"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Suku pertama barisan geometri adalah 3 dan rasio 2. Suku ke-5 adalah?",
             "pilihanJawaban": [
-                "48",
+                "12",
                 "24",
                 "96",
-                "12"
+                "48"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Jumlah 10 suku pertama deret aritmatika dengan a = 2 dan b = 3 adalah?",
             "pilihanJawaban": [
-                "155",
                 "150",
                 "145",
+                "155",
                 "160"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Pada barisan aritmatika, selisih dua suku berurutan disebut?",
             "pilihanJawaban": [
+                "Suku ke-n",
                 "Beda (b)",
                 "Rasio (r)",
-                "Suku pertama (a)",
-                "Suku ke-n"
+                "Suku pertama (a)"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Deret geometri tak hingga dengan a = 4 dan r = 1/2. Jumlah tak hingganya adalah?",
             "pilihanJawaban": [
-                "8",
                 "4",
                 "6",
-                "12"
+                "12",
+                "8"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Suku ke-n barisan aritmatika dirumuskan sebagai?",
             "pilihanJawaban": [
-                "Un = a + (n-1)b",
-                "Un = a \u00d7 r^(n-1)",
+                "Un = n × b",
+                "Un = a × r^(n-1)",
                 "Un = a + nb",
-                "Un = n \u00d7 b"
+                "Un = a + (n-1)b"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Barisan 1, 2, 4, 8, 16, ... memiliki rasio sebesar?",
             "pilihanJawaban": [
-                "2",
                 "1",
+                "3",
                 "4",
-                "3"
+                "2"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Jumlah n suku pertama deret aritmatika adalah Sn = n/2 \u00d7 (a + Un). Jika a=1, Un=19, n=10, maka Sn adalah?",
+            "teksPertanyaan": "Jumlah n suku pertama deret aritmatika adalah Sn = n/2 × (a + Un). Jika a=1, Un=19, n=10, maka Sn adalah?",
             "pilihanJawaban": [
                 "100",
-                "90",
+                "95",
                 "110",
-                "95"
+                "90"
             ],
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Turunan dari f(x) = x\u00b3 adalah?",
+            "teksPertanyaan": "Turunan dari f(x) = x³ adalah?",
             "pilihanJawaban": [
-                "3x\u00b2",
-                "x\u00b2",
+                "3x²",
                 "3x",
-                "x\u00b3"
+                "x³",
+                "x²"
             ],
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Turunan dari f(x) = 5x\u00b2 - 3x + 7 adalah?",
+            "teksPertanyaan": "Turunan dari f(x) = 5x² - 3x + 7 adalah?",
             "pilihanJawaban": [
+                "10x² - 3",
                 "10x - 3",
-                "5x - 3",
                 "10x + 7",
-                "10x\u00b2 - 3"
+                "5x - 3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Limit dari (x\u00b2 - 4)/(x - 2) saat x mendekati 2 adalah?",
+            "teksPertanyaan": "Limit dari (x² - 4)/(x - 2) saat x mendekati 2 adalah?",
             "pilihanJawaban": [
                 "4",
+                "Tidak ada",
                 "2",
-                "0",
-                "Tidak ada"
+                "0"
             ],
             "indeksJawabanBenar": 0
         },
@@ -571,251 +571,251 @@
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Turunan dari f(x) = e\u02e3 adalah?",
+            "teksPertanyaan": "Turunan dari f(x) = eˣ adalah?",
             "pilihanJawaban": [
-                "e\u02e3",
-                "x\u00b7e\u02e3",
+                "x·eˣ",
                 "e^(x-1)",
-                "1"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Integral dari \u222b2x dx adalah?",
-            "pilihanJawaban": [
-                "x\u00b2 + C",
-                "2x\u00b2 + C",
-                "x + C",
-                "2 + C"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Titik stasioner fungsi f(x) = x\u00b2 - 4x + 3 terjadi pada x = ?",
-            "pilihanJawaban": [
-                "2",
-                "4",
                 "1",
-                "3"
+                "eˣ"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Turunan dari f(x) = x\u2074 - 2x\u00b2 + 1 adalah?",
+            "teksPertanyaan": "Integral dari ∫2x dx adalah?",
             "pilihanJawaban": [
-                "4x\u00b3 - 4x",
-                "4x\u00b3 - 2x",
-                "x\u00b3 - 2x",
-                "4x\u00b3 + 4x"
+                "x + C",
+                "2 + C",
+                "2x² + C",
+                "x² + C"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "\u222b\u2080\u00b2 x\u00b2 dx sama dengan?",
+            "teksPertanyaan": "Titik stasioner fungsi f(x) = x² - 4x + 3 terjadi pada x = ?",
             "pilihanJawaban": [
-                "8/3",
-                "4",
+                "3",
                 "2",
-                "4/3"
+                "1",
+                "4"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
+        },
+        {
+            "teksPertanyaan": "Turunan dari f(x) = x⁴ - 2x² + 1 adalah?",
+            "pilihanJawaban": [
+                "4x³ - 2x",
+                "x³ - 2x",
+                "4x³ + 4x",
+                "4x³ - 4x"
+            ],
+            "indeksJawabanBenar": 3
+        },
+        {
+            "teksPertanyaan": "∫₀² x² dx sama dengan?",
+            "pilihanJawaban": [
+                "4/3",
+                "2",
+                "8/3",
+                "4"
+            ],
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Jika f'(x) = 0 dan f''(x) > 0, maka titik tersebut adalah titik?",
             "pilihanJawaban": [
-                "Minimum lokal",
                 "Maksimum lokal",
-                "Belok",
-                "Stasioner naik"
+                "Stasioner naik",
+                "Minimum lokal",
+                "Belok"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Volume kubus dengan panjang rusuk 5 cm adalah?",
             "pilihanJawaban": [
-                "125 cm\u00b3",
-                "25 cm\u00b3",
-                "75 cm\u00b3",
-                "150 cm\u00b3"
+                "125 cm³",
+                "25 cm³",
+                "150 cm³",
+                "75 cm³"
             ],
             "indeksJawabanBenar": 0
         },
         {
             "teksPertanyaan": "Luas permukaan bola dengan jari-jari r adalah?",
             "pilihanJawaban": [
-                "4\u03c0r\u00b2",
-                "2\u03c0r\u00b2",
-                "\u03c0r\u00b2",
-                "4/3 \u03c0r\u00b3"
+                "4/3 πr³",
+                "4πr²",
+                "πr²",
+                "2πr²"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Volume kerucut dengan jari-jari alas 3 cm dan tinggi 4 cm adalah?",
             "pilihanJawaban": [
-                "12\u03c0 cm\u00b3",
-                "36\u03c0 cm\u00b3",
-                "9\u03c0 cm\u00b3",
-                "48\u03c0 cm\u00b3"
+                "9π cm³",
+                "36π cm³",
+                "12π cm³",
+                "48π cm³"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Diagonal ruang kubus dengan rusuk a adalah?",
             "pilihanJawaban": [
-                "a\u221a3",
-                "a\u221a2",
+                "a√2",
                 "2a",
-                "a\u221a6"
+                "a√3",
+                "a√6"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Luas segitiga dengan alas 10 cm dan tinggi 6 cm adalah?",
             "pilihanJawaban": [
-                "30 cm\u00b2",
-                "60 cm\u00b2",
-                "15 cm\u00b2",
-                "45 cm\u00b2"
+                "45 cm²",
+                "60 cm²",
+                "15 cm²",
+                "30 cm²"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
-            "teksPertanyaan": "Panjang diameter lingkaran yang memiliki keliling 44 cm (\u03c0 = 22/7) adalah?",
+            "teksPertanyaan": "Panjang diameter lingkaran yang memiliki keliling 44 cm (π = 22/7) adalah?",
             "pilihanJawaban": [
                 "14 cm",
+                "11 cm",
                 "7 cm",
-                "22 cm",
-                "11 cm"
+                "22 cm"
             ],
             "indeksJawabanBenar": 0
         },
         {
             "teksPertanyaan": "Volume bola dengan jari-jari 3 cm adalah?",
             "pilihanJawaban": [
-                "36\u03c0 cm\u00b3",
-                "12\u03c0 cm\u00b3",
-                "9\u03c0 cm\u00b3",
-                "108\u03c0 cm\u00b3"
+                "12π cm³",
+                "36π cm³",
+                "9π cm³",
+                "108π cm³"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Luas permukaan tabung dengan jari-jari 7 cm dan tinggi 10 cm (\u03c0 = 22/7) adalah?",
+            "teksPertanyaan": "Luas permukaan tabung dengan jari-jari 7 cm dan tinggi 10 cm (π = 22/7) adalah?",
             "pilihanJawaban": [
-                "748 cm\u00b2",
-                "440 cm\u00b2",
-                "308 cm\u00b2",
-                "154 cm\u00b2"
+                "308 cm²",
+                "440 cm²",
+                "154 cm²",
+                "748 cm²"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Ordo matriks yang memiliki 3 baris dan 4 kolom adalah?",
             "pilihanJawaban": [
-                "3 \u00d7 4",
-                "4 \u00d7 3",
-                "12 \u00d7 1",
-                "3 + 4"
+                "4 × 3",
+                "3 + 4",
+                "3 × 4",
+                "12 × 1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Transpose matriks A = [[1,2],[3,4]] adalah?",
             "pilihanJawaban": [
-                "[[1,3],[2,4]]",
-                "[[4,3],[2,1]]",
                 "[[2,1],[4,3]]",
-                "[[1,2],[3,4]]"
+                "[[1,2],[3,4]]",
+                "[[1,3],[2,4]]",
+                "[[4,3],[2,1]]"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Determinan matriks [[2,1],[3,4]] adalah?",
             "pilihanJawaban": [
-                "5",
-                "11",
                 "8",
-                "-5"
+                "5",
+                "-5",
+                "11"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Matriks identitas ordo 2\u00d72 adalah?",
+            "teksPertanyaan": "Matriks identitas ordo 2×2 adalah?",
             "pilihanJawaban": [
+                "[[0,0],[0,0]]",
                 "[[1,0],[0,1]]",
                 "[[0,1],[1,0]]",
-                "[[1,1],[0,0]]",
-                "[[0,0],[0,0]]"
+                "[[1,1],[0,0]]"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Dua matriks dapat dijumlahkan jika?",
             "pilihanJawaban": [
-                "Memiliki ordo yang sama",
-                "Memiliki nilai yang sama",
                 "Keduanya matriks bujur sangkar",
-                "Salah satu matriks nol"
+                "Salah satu matriks nol",
+                "Memiliki nilai yang sama",
+                "Memiliki ordo yang sama"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Daerah penyelesaian pada program linear dibatasi oleh?",
             "pilihanJawaban": [
-                "Pertidaksamaan linear",
                 "Persamaan kuadrat",
+                "Pertidaksamaan kuadrat",
                 "Fungsi eksponen",
-                "Pertidaksamaan kuadrat"
+                "Pertidaksamaan linear"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Nilai optimum fungsi tujuan pada program linear dicapai di?",
             "pilihanJawaban": [
-                "Titik sudut daerah feasibel",
                 "Titik pusat daerah feasibel",
                 "Semua titik daerah feasibel",
-                "Titik asal (0,0)"
+                "Titik asal (0,0)",
+                "Titik sudut daerah feasibel"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Fungsi tujuan f = 3x + 2y akan dimaksimalkan. Jika titik sudut adalah (0,4), (2,3), (4,0), nilai maksimum adalah?",
             "pilihanJawaban": [
                 "12",
-                "8",
                 "14",
+                "8",
                 "6"
             ],
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Nilai dari i\u00b2 (bilangan imajiner) adalah?",
+            "teksPertanyaan": "Nilai dari i² (bilangan imajiner) adalah?",
             "pilihanJawaban": [
-                "-1",
-                "1",
                 "i",
-                "-i"
+                "-1",
+                "-i",
+                "1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Konjugat dari bilangan kompleks (3 + 4i) adalah?",
             "pilihanJawaban": [
-                "3 - 4i",
-                "-3 + 4i",
                 "-3 - 4i",
-                "3 + 4i"
+                "3 - 4i",
+                "3 + 4i",
+                "-3 + 4i"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Polinom f(x) = 2x\u00b3 - 3x\u00b2 + x - 5 memiliki derajat?",
+            "teksPertanyaan": "Polinom f(x) = 2x³ - 3x² + x - 5 memiliki derajat?",
             "pilihanJawaban": [
                 "3",
-                "2",
                 "1",
+                "2",
                 "5"
             ],
             "indeksJawabanBenar": 0
@@ -824,181 +824,181 @@
             "teksPertanyaan": "Menurut Teorema Sisa, sisa pembagian f(x) oleh (x - a) adalah?",
             "pilihanJawaban": [
                 "f(a)",
-                "f(-a)",
-                "a",
-                "0"
-            ],
-            "indeksJawabanBenar": 0
-        },
-        {
-            "teksPertanyaan": "Jika (x - 2) adalah faktor dari f(x) = x\u00b2 - 5x + 6, maka f(2) = ?",
-            "pilihanJawaban": [
                 "0",
-                "2",
-                "4",
-                "-2"
+                "f(-a)",
+                "a"
             ],
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Sebuah bola dilempar ke atas dengan ketinggian h = 20t - 5t\u00b2. Tinggi maksimum yang dicapai adalah?",
+            "teksPertanyaan": "Jika (x - 2) adalah faktor dari f(x) = x² - 5x + 6, maka f(2) = ?",
             "pilihanJawaban": [
-                "20 m",
-                "15 m",
-                "25 m",
-                "10 m"
+                "4",
+                "-2",
+                "0",
+                "2"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
+        },
+        {
+            "teksPertanyaan": "Sebuah bola dilempar ke atas dengan ketinggian h = 20t - 5t². Tinggi maksimum yang dicapai adalah?",
+            "pilihanJawaban": [
+                "10 m",
+                "25 m",
+                "20 m",
+                "15 m"
+            ],
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Jumlah sudut dalam segitiga adalah?",
             "pilihanJawaban": [
-                "180\u00b0",
-                "90\u00b0",
-                "360\u00b0",
-                "270\u00b0"
+                "90°",
+                "270°",
+                "180°",
+                "360°"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Sebuah tangga 5 m disandarkan ke dinding. Jarak kaki tangga ke dinding 3 m. Tinggi tangga menyentuh dinding adalah?",
             "pilihanJawaban": [
-                "4 m",
                 "3 m",
+                "4 m",
                 "5 m",
                 "2 m"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Jika tabungan awal Rp 1.000.000 dengan bunga majemuk 10% per tahun, nilai setelah 2 tahun adalah?",
             "pilihanJawaban": [
-                "Rp 1.210.000",
                 "Rp 1.200.000",
+                "Rp 1.250.000",
                 "Rp 1.100.000",
-                "Rp 1.250.000"
+                "Rp 1.210.000"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Persamaan lingkaran dengan pusat (0,0) dan jari-jari 5 adalah?",
             "pilihanJawaban": [
-                "x\u00b2 + y\u00b2 = 25",
-                "x\u00b2 + y\u00b2 = 5",
-                "x\u00b2 - y\u00b2 = 25",
-                "x + y = 5"
+                "x + y = 5",
+                "x² - y² = 25",
+                "x² + y² = 25",
+                "x² + y² = 5"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Bentuk umum persamaan kuadrat adalah?",
             "pilihanJawaban": [
-                "ax\u00b2 + bx + c = 0, a \u2260 0",
-                "ax + b = 0",
-                "ax\u00b2 + bx = 0",
-                "ax\u00b2 = c"
+                "ax² + bx = 0",
+                "ax² + bx + c = 0, a ≠ 0",
+                "ax² = c",
+                "ax + b = 0"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Rumus kuadratik (rumus ABC) untuk akar persamaan ax\u00b2 + bx + c = 0 adalah?",
+            "teksPertanyaan": "Rumus kuadratik (rumus ABC) untuk akar persamaan ax² + bx + c = 0 adalah?",
             "pilihanJawaban": [
-                "x = (-b \u00b1 \u221a(b\u00b2-4ac)) / 2a",
-                "x = (b \u00b1 \u221a(b\u00b2-4ac)) / 2a",
-                "x = (-b \u00b1 \u221a(b\u00b2+4ac)) / 2a",
-                "x = -b / 2a"
+                "x = -b / 2a",
+                "x = (-b ± √(b²-4ac)) / 2a",
+                "x = (-b ± √(b²+4ac)) / 2a",
+                "x = (b ± √(b²-4ac)) / 2a"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
-            "teksPertanyaan": "Nilai dari sin\u00b245\u00b0 + cos\u00b245\u00b0 adalah?",
+            "teksPertanyaan": "Nilai dari sin²45° + cos²45° adalah?",
             "pilihanJawaban": [
-                "1",
-                "\u221a2",
+                "0",
                 "2",
-                "0"
+                "√2",
+                "1"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Bayangan titik A(3, -2) setelah dicerminkan terhadap sumbu X adalah?",
             "pilihanJawaban": [
-                "(3, 2)",
+                "(3, -2)",
                 "(-3, -2)",
-                "(-3, 2)",
-                "(3, -2)"
+                "(3, 2)",
+                "(-3, 2)"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
             "teksPertanyaan": "Translasi titik P(1,3) oleh vektor (2,-1) menghasilkan titik?",
             "pilihanJawaban": [
                 "(3, 2)",
-                "(2, 3)",
                 "(-1, 4)",
-                "(1, 2)"
+                "(1, 2)",
+                "(2, 3)"
             ],
             "indeksJawabanBenar": 0
         },
         {
-            "teksPertanyaan": "Nilai dari \u222b cos x dx adalah?",
+            "teksPertanyaan": "Nilai dari ∫ cos x dx adalah?",
             "pilihanJawaban": [
                 "sin x + C",
-                "-sin x + C",
+                "-cos x + C",
                 "cos x + C",
-                "-cos x + C"
+                "-sin x + C"
             ],
             "indeksJawabanBenar": 0
         },
         {
             "teksPertanyaan": "Jika f(x) = ln x, maka f'(x) adalah?",
             "pilihanJawaban": [
+                "ln x",
                 "1/x",
                 "x",
-                "ln x",
-                "e\u02e3"
+                "eˣ"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 1
         },
         {
             "teksPertanyaan": "Jarak antara dua titik A(1,2) dan B(4,6) adalah?",
             "pilihanJawaban": [
-                "5",
-                "4",
                 "7",
-                "3"
+                "3",
+                "4",
+                "5"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Gradien garis yang melalui titik (1,2) dan (3,8) adalah?",
             "pilihanJawaban": [
-                "3",
                 "2",
+                "6",
                 "4",
-                "6"
+                "3"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         },
         {
             "teksPertanyaan": "Suatu fungsi f(x) dikatakan genap jika?",
             "pilihanJawaban": [
-                "f(-x) = f(x) untuk semua x",
+                "f(x) = 0",
                 "f(-x) = -f(x) untuk semua x",
-                "f(x) > 0",
-                "f(x) = 0"
+                "f(-x) = f(x) untuk semua x",
+                "f(x) > 0"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 2
         },
         {
-            "teksPertanyaan": "Notasi sigma \u03a3\u1d62\u208c\u2081\u00b3 i\u00b2 (jumlah i kuadrat untuk i = 1 sampai 3) adalah?",
+            "teksPertanyaan": "Notasi sigma Σᵢ₌₁³ i² (jumlah i kuadrat untuk i = 1 sampai 3) adalah?",
             "pilihanJawaban": [
-                "14",
-                "9",
                 "6",
-                "12"
+                "9",
+                "12",
+                "14"
             ],
-            "indeksJawabanBenar": 0
+            "indeksJawabanBenar": 3
         }
     ]
 }

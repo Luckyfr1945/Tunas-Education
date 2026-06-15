@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Jika (x - 2) adalah faktor dari f(x) = x\xB2 - 5x + 6, maka f(2)
     = ?"
   pilihanJawaban:
-  - 0
-  - 2
   - 4
   - -2
-  indeksJawabanBenar: 0
+  - 0
+  - 2
+  indeksJawabanBenar: 2

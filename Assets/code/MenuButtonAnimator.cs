@@ -102,8 +102,8 @@ public class ButtonHoverHelper : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     private void Update()
     {
-        // Efek membesar/mengecil yang smooth
-        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * animSpeed);
+        // Efek membesar/mengecil yang smooth (menggunakan unscaledDeltaTime agar tetap berjalan saat game pause)
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.unscaledDeltaTime * animSpeed);
     }
 
     // --- KETIKA CURSOR MASUK / DIPILIH PANAH ---
