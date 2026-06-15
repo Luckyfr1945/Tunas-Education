@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Simpangan baku (standar deviasi) mengukur?
   pilihanJawaban:
-  - Sebaran data dari rata-rata
+  - Selisih nilai terbesar dan terkecil
   - Nilai tengah data
   - Nilai yang paling sering muncul
-  - Selisih nilai terbesar dan terkecil
-  indeksJawabanBenar: 0
+  - Sebaran data dari rata-rata
+  indeksJawabanBenar: 3

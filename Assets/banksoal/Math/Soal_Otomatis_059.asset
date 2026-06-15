@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Integral dari \u222B2x dx adalah?"
   pilihanJawaban:
-  - "x\xB2 + C"
-  - "2x\xB2 + C"
   - x + C
   - 2 + C
-  indeksJawabanBenar: 0
+  - "2x\xB2 + C"
+  - "x\xB2 + C"
+  indeksJawabanBenar: 3

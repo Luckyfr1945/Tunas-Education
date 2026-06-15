@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Luas segitiga dengan alas 10 cm dan tinggi 6 cm adalah?
   pilihanJawaban:
-  - "30 cm\xB2"
+  - "45 cm\xB2"
   - "60 cm\xB2"
   - "15 cm\xB2"
-  - "45 cm\xB2"
-  indeksJawabanBenar: 0
+  - "30 cm\xB2"
+  indeksJawabanBenar: 3

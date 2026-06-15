@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Dalam segitiga siku-siku, sin \u03B8 = sisi depan dibagi?"
   pilihanJawaban:
-  - Sisi miring (hipotenusa)
-  - Sisi samping
-  - Sisi depan
   - Luas segitiga
-  indeksJawabanBenar: 0
+  - Sisi depan
+  - Sisi samping
+  - Sisi miring (hipotenusa)
+  indeksJawabanBenar: 3

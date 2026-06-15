@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Volume bola dengan jari-jari 3 cm adalah?
   pilihanJawaban:
-  - "36\u03C0 cm\xB3"
   - "12\u03C0 cm\xB3"
+  - "36\u03C0 cm\xB3"
   - "9\u03C0 cm\xB3"
   - "108\u03C0 cm\xB3"
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

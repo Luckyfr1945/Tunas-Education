@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Matriks identitas ordo 2\xD72 adalah?"
   pilihanJawaban:
+  - '[[0,0],[0,0]]'
   - '[[1,0],[0,1]]'
   - '[[0,1],[1,0]]'
   - '[[1,1],[0,0]]'
-  - '[[0,0],[0,0]]'
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

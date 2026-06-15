@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Bentuk umum persamaan kuadrat adalah?
   pilihanJawaban:
-  - "ax\xB2 + bx + c = 0, a \u2260 0"
-  - ax + b = 0
   - "ax\xB2 + bx = 0"
+  - "ax\xB2 + bx + c = 0, a \u2260 0"
   - "ax\xB2 = c"
-  indeksJawabanBenar: 0
+  - ax + b = 0
+  indeksJawabanBenar: 1

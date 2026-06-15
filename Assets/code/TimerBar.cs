@@ -59,6 +59,7 @@ public class TimerBar : MonoBehaviour
     public void ResetTimer()
     {
         currentTime = maxTime;
+        timerSlider.maxValue = maxTime;
         timerSlider.value = currentTime;
         fillImage.color = greenColor;
         enabled = true;

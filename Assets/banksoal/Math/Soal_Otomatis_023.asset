@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari tan 45\xB0 adalah?"
   pilihanJawaban:
-  - 1
   - "\u221A3"
-  - "1/\u221A3"
   - "\u221A2"
-  indeksJawabanBenar: 0
+  - "1/\u221A3"
+  - 1
+  indeksJawabanBenar: 3

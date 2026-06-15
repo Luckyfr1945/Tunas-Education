@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Kombinasi C(6,2) sama dengan?
   pilihanJawaban:
-  - 15
-  - 12
-  - 30
   - 6
-  indeksJawabanBenar: 0
+  - 12
+  - 15
+  - 30
+  indeksJawabanBenar: 2

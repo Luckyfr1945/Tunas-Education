@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: 'Sistem persamaan: 2x + y = 7 dan x - y = 2. Nilai x adalah?'
   pilihanJawaban:
-  - 3
-  - 2
   - 1
   - 4
-  indeksJawabanBenar: 0
+  - 3
+  - 2
+  indeksJawabanBenar: 2

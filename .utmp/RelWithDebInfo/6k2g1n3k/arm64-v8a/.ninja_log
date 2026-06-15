@@ -1,0 +1,23 @@
+# ninja log v5
+0	1536	1779778417860707347	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b8cc02f5177eae78
+3	155	1779778416478216775	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	11afa6cc17f7eaad
+1	1192	1779778417512701911	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	344f615ec743701c
+1	1504	1779778417824921766	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c42fb7b3654dc3ea
+0	1217	1779778417536433031	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	abc453731656528d
+1	1139	1779778417458100673	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3da7410a321b9a06
+0	1250	1779778417570488935	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1569b6d0dba70a6e
+1536	1555	1779778417880201492	/home/kiki/projectakhir/Tunas-Education/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6k2g1n3k/obj/arm64-v8a/libgame.so	e5602a0fb3544de3
+2	1152	1779778417476813601	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7fbdd79efc8271b0
+2	1272	1779778417595682558	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3c41eac3832c2928
+155	226	1779778416541216075	/home/kiki/projectakhir/Tunas-Education/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6k2g1n3k/obj/arm64-v8a/libswappywrapper.so	38b4ecc8f6e023c4
+8	88	1779779988364117216	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	11afa6cc17f7eaad
+88	149	1779779988422364099	/home/kiki/projectakhir/Tunas-Education/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6k2g1n3k/obj/arm64-v8a/libswappywrapper.so	38b4ecc8f6e023c4
+7	704	1779779988974378769	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7fbdd79efc8271b0
+7	767	1779779989035526161	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1569b6d0dba70a6e
+7	774	1779779989042401629	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	abc453731656528d
+7	864	1779779989134830584	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3c41eac3832c2928
+7	874	1779779989144918884	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3da7410a321b9a06
+7	930	1779779989203002029	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	344f615ec743701c
+7	1034	1779779989307139180	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c42fb7b3654dc3ea
+7	1312	1779779989582025219	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b8cc02f5177eae78
+1312	1337	1779779989612395760	/home/kiki/projectakhir/Tunas-Education/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6k2g1n3k/obj/arm64-v8a/libgame.so	e5602a0fb3544de3

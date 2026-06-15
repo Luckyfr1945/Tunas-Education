@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Polinom f(x) = 2x\xB3 - 3x\xB2 + x - 5 memiliki derajat?"
   pilihanJawaban:
   - 3
-  - 2
   - 1
+  - 2
   - 5
   indeksJawabanBenar: 0

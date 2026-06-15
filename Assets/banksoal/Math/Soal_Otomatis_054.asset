@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Turunan dari f(x) = x\xB3 adalah?"
   pilihanJawaban:
   - "3x\xB2"
-  - "x\xB2"
   - 3x
   - "x\xB3"
+  - "x\xB2"
   indeksJawabanBenar: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari 2\xB3 \xD7 2\u2074 adalah?"
   pilihanJawaban:
-  - 128
-  - 64
   - 256
+  - 64
   - 32
-  indeksJawabanBenar: 0
+  - 128
+  indeksJawabanBenar: 3

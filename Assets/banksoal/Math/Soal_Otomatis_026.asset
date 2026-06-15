@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Rumus sudut ganda sin 2x sama dengan?
   pilihanJawaban:
-  - 2 sin x cos x
   - "sin\xB2x - cos\xB2x"
-  - "2 sin\xB2x"
   - "cos\xB2x - sin\xB2x"
-  indeksJawabanBenar: 0
+  - 2 sin x cos x
+  - "2 sin\xB2x"
+  indeksJawabanBenar: 2

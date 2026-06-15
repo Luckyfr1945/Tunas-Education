@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Deret geometri tak hingga dengan a = 4 dan r = 1/2. Jumlah tak
     hingganya adalah?
   pilihanJawaban:
-  - 8
   - 4
   - 6
   - 12
-  indeksJawabanBenar: 0
+  - 8
+  indeksJawabanBenar: 3

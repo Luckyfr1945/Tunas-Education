@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: 'Sederhanakan: log 100 + log 10 (basis 10)?'
   pilihanJawaban:
-  - 3
   - 2
-  - 4
   - 1
-  indeksJawabanBenar: 0
+  - 4
+  - 3
+  indeksJawabanBenar: 3

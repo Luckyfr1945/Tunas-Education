@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Suku ke-n barisan aritmatika dirumuskan sebagai?
   pilihanJawaban:
-  - Un = a + (n-1)b
+  - "Un = n \xD7 b"
   - "Un = a \xD7 r^(n-1)"
   - Un = a + nb
-  - "Un = n \xD7 b"
-  indeksJawabanBenar: 0
+  - Un = a + (n-1)b
+  indeksJawabanBenar: 3

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Identitas trigonometri sin\xB2x + cos\xB2x sama dengan?"
   pilihanJawaban:
-  - 1
-  - 0
   - sin 2x
   - 2
-  indeksJawabanBenar: 0
+  - 1
+  - 0
+  indeksJawabanBenar: 2

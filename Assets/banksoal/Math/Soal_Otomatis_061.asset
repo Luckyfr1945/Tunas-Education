@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Turunan dari f(x) = x\u2074 - 2x\xB2 + 1 adalah?"
   pilihanJawaban:
-  - "4x\xB3 - 4x"
   - "4x\xB3 - 2x"
   - "x\xB3 - 2x"
   - "4x\xB3 + 4x"
-  indeksJawabanBenar: 0
+  - "4x\xB3 - 4x"
+  indeksJawabanBenar: 3

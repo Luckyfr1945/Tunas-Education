@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Jumlah 10 suku pertama deret aritmatika dengan a = 2 dan b = 3
     adalah?
   pilihanJawaban:
-  - 155
   - 150
   - 145
+  - 155
   - 160
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

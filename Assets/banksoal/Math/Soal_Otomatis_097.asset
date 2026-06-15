@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jarak antara dua titik A(1,2) dan B(4,6) adalah?
   pilihanJawaban:
-  - 5
-  - 4
   - 7
   - 3
-  indeksJawabanBenar: 0
+  - 4
+  - 5
+  indeksJawabanBenar: 3

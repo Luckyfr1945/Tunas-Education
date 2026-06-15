@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     [Header("Target Scene Names")]
     public string playTargetScene = "Category";       
     public string settingsTargetScene = "settings";   
-    public string creditTargetScene = "SampleScene"; 
+    public string creditTargetScene = "credit"; 
     public string extraTargetScene = "lvlmenuipa";    
 
     private void Start()
@@ -35,9 +35,8 @@ public class MainMenu : MonoBehaviour
         if (creditButton != null) creditButton.onClick.AddListener(LoadCredits);
         if (exitButton != null) exitButton.onClick.AddListener(QuitGame);
 
-        // Hubungkan fungsi ke tombol sosmed
-        if (igButton != null) igButton.onClick.AddListener(OpenInstagram);
-        if (tiktokButton != null) tiktokButton.onClick.AddListener(OpenTikTok);
+        // Tombol sosmed (igButton & tiktokButton) onClick diatur langsung dari Inspector Unity 
+        // menggunakan script tiktok.cs, agar tidak membuka 2 link sekaligus.
 
         // --- MENGGANTIKAN ANIMATOR ---
         // Posisikan panel di luar layar dulu saat mulai, lalu luncurkan animasi masuk
@@ -85,16 +84,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit(); 
     }
 
-    // --- FUNGSI SOSIAL MEDIA ---
-    public void OpenInstagram()
-    {
-        Debug.Log("Buka IG");
-        Application.OpenURL("https://instagram.com/usernamekamu"); // Ganti linknya
-    }
-
-    public void OpenTikTok()
-    {
-        Debug.Log("Buka TikTok");
-        Application.OpenURL("https://tiktok.com/@usernamekamu"); // Ganti linknya
-    }
 }

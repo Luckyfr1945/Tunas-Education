@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Persamaan lingkaran dengan pusat (0,0) dan jari-jari 5 adalah?
   pilihanJawaban:
+  - x + y = 5
+  - "x\xB2 - y\xB2 = 25"
   - "x\xB2 + y\xB2 = 25"
   - "x\xB2 + y\xB2 = 5"
-  - "x\xB2 - y\xB2 = 25"
-  - x + y = 5
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: "Nilai dari cos 60\xB0 adalah?"
   pilihanJawaban:
   - 1/2
-  - "\u221A3/2"
-  - "\u221A2/2"
   - 0
+  - "\u221A2/2"
+  - "\u221A3/2"
   indeksJawabanBenar: 0

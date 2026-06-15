@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Sebuah bola dilempar ke atas dengan ketinggian h = 20t - 5t\xB2.
     Tinggi maksimum yang dicapai adalah?"
   pilihanJawaban:
+  - 10 m
+  - 25 m
   - 20 m
   - 15 m
-  - 25 m
-  - 10 m
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

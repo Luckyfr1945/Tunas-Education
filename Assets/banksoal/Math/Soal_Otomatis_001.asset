@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Hasil dari (2x + 3)(x - 5) adalah?
   pilihanJawaban:
-  - "2x\xB2 - 7x - 15"
-  - "2x\xB2 + 7x - 15"
   - "2x\xB2 - 10x - 15"
+  - "2x\xB2 + 7x - 15"
   - "2x\xB2 - 7x + 15"
-  indeksJawabanBenar: 0
+  - "2x\xB2 - 7x - 15"
+  indeksJawabanBenar: 3

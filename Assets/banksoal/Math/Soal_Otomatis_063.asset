@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jika f'(x) = 0 dan f''(x) > 0, maka titik tersebut adalah titik?
   pilihanJawaban:
-  - Minimum lokal
   - Maksimum lokal
-  - Belok
   - Stasioner naik
-  indeksJawabanBenar: 0
+  - Minimum lokal
+  - Belok
+  indeksJawabanBenar: 2

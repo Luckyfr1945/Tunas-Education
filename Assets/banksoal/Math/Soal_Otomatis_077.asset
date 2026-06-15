@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Daerah penyelesaian pada program linear dibatasi oleh?
   pilihanJawaban:
-  - Pertidaksamaan linear
   - Persamaan kuadrat
-  - Fungsi eksponen
   - Pertidaksamaan kuadrat
-  indeksJawabanBenar: 0
+  - Fungsi eksponen
+  - Pertidaksamaan linear
+  indeksJawabanBenar: 3

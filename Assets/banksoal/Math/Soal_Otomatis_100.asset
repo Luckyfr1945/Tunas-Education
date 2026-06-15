@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: "Notasi sigma \u03A3\u1D62\u208C\u2081\xB3 i\xB2 (jumlah i kuadrat
     untuk i = 1 sampai 3) adalah?"
   pilihanJawaban:
-  - 14
-  - 9
   - 6
+  - 9
   - 12
-  indeksJawabanBenar: 0
+  - 14
+  indeksJawabanBenar: 3

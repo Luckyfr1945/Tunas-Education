@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jika f(x) = ln x, maka f'(x) adalah?
   pilihanJawaban:
+  - ln x
   - 1/x
   - x
-  - ln x
   - "e\u02E3"
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

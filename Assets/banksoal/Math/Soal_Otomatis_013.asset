@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari log\u2082 32 adalah?"
   pilihanJawaban:
-  - 5
-  - 4
-  - 6
   - 3
-  indeksJawabanBenar: 0
+  - 4
+  - 5
+  - 6
+  indeksJawabanBenar: 2

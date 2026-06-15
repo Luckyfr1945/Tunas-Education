@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari i\xB2 (bilangan imajiner) adalah?"
   pilihanJawaban:
-  - -1
-  - 1
   - i
+  - -1
   - -i
-  indeksJawabanBenar: 0
+  - 1
+  indeksJawabanBenar: 1

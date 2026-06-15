@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Diagonal ruang kubus dengan rusuk a adalah?
   pilihanJawaban:
-  - "a\u221A3"
   - "a\u221A2"
   - 2a
+  - "a\u221A3"
   - "a\u221A6"
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

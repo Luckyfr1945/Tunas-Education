@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari sin\xB245\xB0 + cos\xB245\xB0 adalah?"
   pilihanJawaban:
-  - 1
-  - "\u221A2"
-  - 2
   - 0
-  indeksJawabanBenar: 0
+  - 2
+  - "\u221A2"
+  - 1
+  indeksJawabanBenar: 3

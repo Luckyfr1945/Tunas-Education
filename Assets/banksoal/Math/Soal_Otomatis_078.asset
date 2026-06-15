@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Nilai optimum fungsi tujuan pada program linear dicapai di?
   pilihanJawaban:
-  - Titik sudut daerah feasibel
   - Titik pusat daerah feasibel
   - Semua titik daerah feasibel
   - Titik asal (0,0)
-  indeksJawabanBenar: 0
+  - Titik sudut daerah feasibel
+  indeksJawabanBenar: 3

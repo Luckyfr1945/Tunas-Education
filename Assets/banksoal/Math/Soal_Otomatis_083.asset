@@ -15,7 +15,7 @@ MonoBehaviour:
   teksPertanyaan: Menurut Teorema Sisa, sisa pembagian f(x) oleh (x - a) adalah?
   pilihanJawaban:
   - f(a)
+  - 0
   - f(-a)
   - a
-  - 0
   indeksJawabanBenar: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jumlah sudut dalam segitiga adalah?
   pilihanJawaban:
-  - "180\xB0"
   - "90\xB0"
-  - "360\xB0"
   - "270\xB0"
-  indeksJawabanBenar: 0
+  - "180\xB0"
+  - "360\xB0"
+  indeksJawabanBenar: 2

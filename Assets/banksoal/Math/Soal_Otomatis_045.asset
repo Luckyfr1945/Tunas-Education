@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Permutasi P(5,3) sama dengan?
   pilihanJawaban:
-  - 60
   - 20
-  - 10
+  - 60
   - 30
-  indeksJawabanBenar: 0
+  - 10
+  indeksJawabanBenar: 1

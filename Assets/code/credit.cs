@@ -16,7 +16,7 @@ public class credit : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("mainmenu"); 
+        SceneManager.LoadScene("MainMenu"); 
     }
 
 }

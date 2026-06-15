@@ -15,8 +15,8 @@ MonoBehaviour:
   teksPertanyaan: Sebuah tangga 5 m disandarkan ke dinding. Jarak kaki tangga ke
     dinding 3 m. Tinggi tangga menyentuh dinding adalah?
   pilihanJawaban:
-  - 4 m
   - 3 m
+  - 4 m
   - 5 m
   - 2 m
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

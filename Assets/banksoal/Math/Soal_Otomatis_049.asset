@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Pada barisan aritmatika, selisih dua suku berurutan disebut?
   pilihanJawaban:
+  - Suku ke-n
   - Beda (b)
   - Rasio (r)
   - Suku pertama (a)
-  - Suku ke-n
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 1

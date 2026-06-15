@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Jika 2^x = 16, maka nilai x adalah?
   pilihanJawaban:
-  - 4
-  - 3
-  - 5
   - 2
-  indeksJawabanBenar: 0
+  - 5
+  - 3
+  - 4
+  indeksJawabanBenar: 3

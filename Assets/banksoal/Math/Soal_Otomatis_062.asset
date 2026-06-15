@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "\u222B\u2080\xB2 x\xB2 dx sama dengan?"
   pilihanJawaban:
+  - 4/3
+  - 2
   - 8/3
   - 4
-  - 2
-  - 4/3
-  indeksJawabanBenar: 0
+  indeksJawabanBenar: 2

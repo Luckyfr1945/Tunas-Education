@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Bentuk sederhana dari (a\xB3b\xB2)\xB2 adalah?"
   pilihanJawaban:
-  - "a\u2076b\u2074"
-  - "a\u2075b\u2074"
-  - "a\u2076b\xB2"
   - "a\xB3b\u2074"
-  indeksJawabanBenar: 0
+  - "a\u2076b\xB2"
+  - "a\u2075b\u2074"
+  - "a\u2076b\u2074"
+  indeksJawabanBenar: 3

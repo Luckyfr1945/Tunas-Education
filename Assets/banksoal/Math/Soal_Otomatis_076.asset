@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: Dua matriks dapat dijumlahkan jika?
   pilihanJawaban:
-  - Memiliki ordo yang sama
-  - Memiliki nilai yang sama
   - Keduanya matriks bujur sangkar
   - Salah satu matriks nol
-  indeksJawabanBenar: 0
+  - Memiliki nilai yang sama
+  - Memiliki ordo yang sama
+  indeksJawabanBenar: 3

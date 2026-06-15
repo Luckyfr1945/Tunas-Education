@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
   teksPertanyaan: "Nilai dari cos 0\xB0 adalah?"
   pilihanJawaban:
-  - 1
   - 0
-  - -1
   - "\u221A3/2"
-  indeksJawabanBenar: 0
+  - 1
+  - -1
+  indeksJawabanBenar: 2
