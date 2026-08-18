@@ -1,13 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using TMPro; 
 using UnityEngine.SceneManagement;
-using System.Collections.Generic; 
+using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour
 {
-    [Header("Identitas Kategori (WAJIB BEDA TIAP SCENE)")]
+    [Header("Identitas Kategori")]
     [Tooltip("Ketik: IPA, MATH, atau SARKASME")]
     public string kodeKategori = "IPA"; 
+
+    [Header("Mode Pameran")]
+    [Tooltip("Jumlah total soal dalam 1 sesi permainan di pameran")]
+    public int totalSoalPameran = 5;
+
+    [Header("Sistem Countdown (3 Detik di Awal)")]
+    public GameObject panelCountdown;
+    public TMP_Text teksCountdown;
 
     [Header("Sistem Darah / Nyawa")]
     public int nyawaMaksimal = 3;
@@ -22,21 +32,21 @@ public class GameplayManager : MonoBehaviour
     private int levelAktif;
     private int indexSoalTerpilih; 
     
-    // Batas maksimal level untuk pengecekan riwayat soal (bisa dinaikkan jika soalmu sangat banyak)
     private int batasMaksimalLevel = 50; 
 
     [Header("UI Teks")]
     public TMP_Text teksPertanyaan;
     public TMP_Text[] teksPilihanJawaban; 
-    [Tooltip("Masukkan TextMeshPro untuk tampilan tulisan Level di sini")]
+    [Tooltip("Masukkan TextMeshPro untuk tampilan tulisan Level / Soal di sini")]
     public TMP_Text teksLevelUI; 
+    public TMP_Text teksPesanMenang;
 
     [Header("Komponen Timer")]
     public TimerBar scriptTimer; 
 
     [Header("Pengaturan Kesulitan Waktu")]
     public float waktuDasar = 30f; 
-    public float potonganWaktu = 5f; 
+    public float potonganWaktu = 3f; 
 
     [Header("UI Panel")]
     public GameObject panelMenang;
@@ -44,6 +54,7 @@ public class GameplayManager : MonoBehaviour
     public GameObject panelPause; 
 
     private bool isGameSelesai = false; 
+    private bool isCountingDown = false;
 
     private void Start()
     {
@@ -60,20 +71,83 @@ public class GameplayManager : MonoBehaviour
         nyawaSaatIni = PlayerPrefs.GetInt("SisaNyawa", nyawaMaksimal);
 
         // Update UI
-        if (teksLevelUI != null) teksLevelUI.text = "LEVEL " + levelAktif;
+        if (teksLevelUI != null) 
+            teksLevelUI.text = "SOAL " + levelAktif + " / " + totalSoalPameran;
+            
         UpdateUIHati();
 
-        panelMenang.SetActive(false);
-        panelKalah.SetActive(false);
-        if(panelPause != null) panelPause.SetActive(false);
+        if (panelMenang != null) panelMenang.SetActive(false);
+        if (panelKalah != null) panelKalah.SetActive(false);
+        if (panelPause != null) panelPause.SetActive(false);
         
         isGameSelesai = false;
+
+        // Pilih soal dulu agar teks pertanyaan siap
         PilihSoalRandom();
+
+        // Jalankan countdown 3 detik di awal game
+        StartCoroutine(StartCountdownRoutine());
+    }
+
+    private IEnumerator StartCountdownRoutine()
+    {
+        isCountingDown = true;
+        SetPilihanJawabanInteractable(false);
+
+        if (scriptTimer != null) 
+        {
+            scriptTimer.enabled = false;
+        }
+
+        if (panelCountdown != null && teksCountdown != null)
+        {
+            panelCountdown.SetActive(true);
+
+            teksCountdown.text = "3";
+            yield return new WaitForSeconds(1f);
+
+            teksCountdown.text = "2";
+            yield return new WaitForSeconds(1f);
+
+            teksCountdown.text = "1";
+            yield return new WaitForSeconds(1f);
+
+            teksCountdown.text = "MULAI!";
+            yield return new WaitForSeconds(0.6f);
+
+            panelCountdown.SetActive(false);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        isCountingDown = false;
+        SetPilihanJawabanInteractable(true);
+
+        if (scriptTimer != null)
+        {
+            scriptTimer.ResetTimer();
+            scriptTimer.enabled = true;
+        }
+    }
+
+    private void SetPilihanJawabanInteractable(bool state)
+    {
+        if (teksPilihanJawaban == null) return;
+        foreach (var teks in teksPilihanJawaban)
+        {
+            if (teks != null)
+            {
+                Button btn = teks.GetComponentInParent<Button>();
+                if (btn != null) btn.interactable = state;
+            }
+        }
     }
 
     private void Update()
     {
-        if (!isGameSelesai && scriptTimer != null && scriptTimer.timerSlider.value <= 0f)
+        if (!isGameSelesai && !isCountingDown && scriptTimer != null && scriptTimer.timerSlider != null && scriptTimer.timerSlider.value <= 0f)
         {
             JawabanSalah(true); 
         }
@@ -167,9 +241,9 @@ public class GameplayManager : MonoBehaviour
 
         if (scriptTimer != null) 
         {
-            int kelipatanKesulitan = (levelAktif - 1) / 5;
+            int kelipatanKesulitan = (levelAktif - 1);
             float waktuLevelIni = waktuDasar - (kelipatanKesulitan * potonganWaktu);
-            if (waktuLevelIni < 5f) waktuLevelIni = 5f;
+            if (waktuLevelIni < 8f) waktuLevelIni = 8f;
 
             scriptTimer.maxTime = waktuLevelIni; 
             scriptTimer.ResetTimer();
@@ -178,7 +252,7 @@ public class GameplayManager : MonoBehaviour
 
     public void CekJawaban(int indeksPilihan)
     {
-        if (isGameSelesai || soalSaatIni == null) return; 
+        if (isGameSelesai || isCountingDown || soalSaatIni == null) return; 
 
         if (indeksPilihan == soalSaatIni.indeksJawabanBenar) 
         {
@@ -213,36 +287,59 @@ public class GameplayManager : MonoBehaviour
     private void Menang()
     {
         isGameSelesai = true;
-        panelMenang.SetActive(true);
+        if (scriptTimer != null) scriptTimer.enabled = false;
         
         PlayerPrefs.SetInt(kodeKategori + "_Level_" + levelAktif + "_Soal", indexSoalTerpilih);
         PlayerPrefs.SetInt("SisaNyawa", nyawaSaatIni); 
         PlayerPrefs.Save();
+
+        if (panelMenang != null)
+        {
+            panelMenang.SetActive(true);
+            if (levelAktif >= totalSoalPameran && teksPesanMenang != null)
+            {
+                teksPesanMenang.text = "SELAMAT! KAMU MENYELESAIKAN SEMUA SOAL!";
+            }
+        }
     }
 
     private void Kalah(string pesan)
     {
         isGameSelesai = true;
-        if(scriptTimer != null) scriptTimer.enabled = false; 
+        if (scriptTimer != null) scriptTimer.enabled = false; 
         if (panelPause != null) panelPause.SetActive(false);
         
-        // RESET DATA GAME OVER
+        ResetDataPameran();
+        
+        if (panelKalah != null) panelKalah.SetActive(true);
+    }
+
+    public void ResetDataPameran()
+    {
         PlayerPrefs.SetInt("LevelAktif", 1);
         PlayerPrefs.SetInt("SisaNyawa", nyawaMaksimal);
 
-        // LOGIKA BARU: Hapus riwayat soal yang sudah dijawab sebelumnya
         for (int i = 1; i <= batasMaksimalLevel; i++)
         {
             PlayerPrefs.DeleteKey(kodeKategori + "_Level_" + i + "_Soal");
         }
-
         PlayerPrefs.Save();
-        
-        panelKalah.SetActive(true);
     }
 
-    public void PauseGame() { if (!isGameSelesai) { panelPause.SetActive(true); } }
-    public void LanjutGame() { panelPause.SetActive(false); Time.timeScale = 1f; }
+    public void PauseGame() 
+    { 
+        if (!isGameSelesai && !isCountingDown) 
+        { 
+            if (panelPause != null) panelPause.SetActive(true); 
+            Time.timeScale = 0f;
+        } 
+    }
+
+    public void LanjutGame() 
+    { 
+        if (panelPause != null) panelPause.SetActive(false); 
+        Time.timeScale = 1f; 
+    }
     
     public void UlangiLevel() 
     { 
@@ -253,14 +350,23 @@ public class GameplayManager : MonoBehaviour
     public void KeMenuUtama() 
     { 
         Time.timeScale = 1f; 
-        SceneManager.LoadScene("Category"); 
+        ResetDataPameran();
+        SceneManager.LoadScene("MainMenu"); 
     }
     
     public void LanjutLevelBerikutnya()
     {
-        PlayerPrefs.SetInt("LevelAktif", levelAktif + 1);
-        PlayerPrefs.Save();
-        Time.timeScale = 1f; 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+        if (levelAktif >= totalSoalPameran)
+        {
+            // Jika sudah 5 soal dan menekan lanjut/selesai -> Kembali ke Main Menu
+            KeMenuUtama();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("LevelAktif", levelAktif + 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
