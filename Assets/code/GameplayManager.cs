@@ -122,7 +122,7 @@ public class GameplayManager : MonoBehaviour
         // Matikan word wrapping agar kata 'MULAI!' tidak terpotong turun ke bawah
         if (teksCountdown != null)
         {
-            teksCountdown.enableWordWrapping = false;
+            teksCountdown.textWrappingMode = TextWrappingModes.NoWrap;
             teksCountdown.overflowMode = TextOverflowModes.Overflow;
             if (teksCountdown.rectTransform != null)
             {
@@ -225,7 +225,7 @@ public class GameplayManager : MonoBehaviour
         }
         teksCountdown.fontStyle = FontStyles.Bold;
         teksCountdown.alignment = TextAlignmentOptions.Center;
-        teksCountdown.enableWordWrapping = false;
+        teksCountdown.textWrappingMode = TextWrappingModes.NoWrap;
         teksCountdown.overflowMode = TextOverflowModes.Overflow;
 
         Transform tf = teksCountdown.transform;
