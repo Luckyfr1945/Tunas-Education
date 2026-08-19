@@ -101,13 +101,48 @@ public class GameplayManager : MonoBehaviour
             scriptTimer.enabled = false;
         }
 
-        // Tentukan objek yang akan diaktifkan/dinonaktifkan (bisa panel atau langsung teksnya)
-        GameObject targetObjek = panelCountdown != null ? panelCountdown : (teksCountdown != null ? teksCountdown.gameObject : null);
+        // Matikan word wrapping agar kata 'MULAI!' tidak terpotong turun ke bawah
+        if (teksCountdown != null)
+        {
+            teksCountdown.enableWordWrapping = false;
+            teksCountdown.overflowMode = TextOverflowModes.Overflow;
+            if (teksCountdown.rectTransform != null)
+            {
+                teksCountdown.rectTransform.sizeDelta = new Vector2(1600f, 450f);
+            }
+        }
+
+        // Tentukan objek yang akan diaktifkan (bisa panel manual atau auto-backdrop)
+        GameObject autoBackdrop = null;
+        if (panelCountdown != null)
+        {
+            panelCountdown.SetActive(true);
+        }
+        else if (teksCountdown != null)
+        {
+            // Jika belum buat panel, buat backdrop gelap otomatis di belakang teks
+            Canvas canvas = teksCountdown.GetComponentInParent<Canvas>();
+            if (canvas != null)
+            {
+                autoBackdrop = new GameObject("Countdown_AutoBackdrop", typeof(RectTransform), typeof(Image));
+                autoBackdrop.transform.SetParent(canvas.transform, false);
+                // Posisikan tepat di belakang teks countdown
+                autoBackdrop.transform.SetSiblingIndex(teksCountdown.transform.GetSiblingIndex());
+
+                RectTransform rt = autoBackdrop.GetComponent<RectTransform>();
+                rt.anchorMin = Vector2.zero;
+                rt.anchorMax = Vector2.one;
+                rt.offsetMin = Vector2.zero;
+                rt.offsetMax = Vector2.zero;
+
+                Image img = autoBackdrop.GetComponent<Image>();
+                img.color = new Color(0f, 0f, 0f, 0.85f); // Gelap 85% menutupi soal di belakang
+            }
+            teksCountdown.gameObject.SetActive(true);
+        }
 
         if (teksCountdown != null)
         {
-            if (targetObjek != null) targetObjek.SetActive(true);
-
             // 3 (Oranye)
             yield return StartCoroutine(PlayStepCountdown("3", new Color32(255, 140, 0, 255), 1f));
 
@@ -120,7 +155,9 @@ public class GameplayManager : MonoBehaviour
             // MULAI! (Hijau Cerah)
             yield return StartCoroutine(PlayStepCountdown("MULAI!", new Color32(50, 205, 50, 255), 0.7f));
 
-            if (targetObjek != null) targetObjek.SetActive(false);
+            if (panelCountdown != null) panelCountdown.SetActive(false);
+            if (autoBackdrop != null) Destroy(autoBackdrop);
+            teksCountdown.gameObject.SetActive(false);
         }
         else
         {
@@ -151,6 +188,8 @@ public class GameplayManager : MonoBehaviour
         }
         teksCountdown.fontStyle = FontStyles.Bold;
         teksCountdown.alignment = TextAlignmentOptions.Center;
+        teksCountdown.enableWordWrapping = false;
+        teksCountdown.overflowMode = TextOverflowModes.Overflow;
 
         Transform tf = teksCountdown.transform;
         Vector3 baseScale = Vector3.one;
