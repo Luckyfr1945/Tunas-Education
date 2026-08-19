@@ -99,23 +99,26 @@ public class GameplayManager : MonoBehaviour
             scriptTimer.enabled = false;
         }
 
-        if (panelCountdown != null && teksCountdown != null)
+        // Tentukan objek yang akan diaktifkan/dinonaktifkan (bisa panel atau langsung teksnya)
+        GameObject targetObjek = panelCountdown != null ? panelCountdown : (teksCountdown != null ? teksCountdown.gameObject : null);
+
+        if (teksCountdown != null)
         {
-            panelCountdown.SetActive(true);
+            if (targetObjek != null) targetObjek.SetActive(true);
 
-            teksCountdown.text = "3";
-            yield return new WaitForSeconds(1f);
+            // 3 (Oranye)
+            yield return StartCoroutine(PlayStepCountdown("3", new Color32(255, 140, 0, 255), 1f));
 
-            teksCountdown.text = "2";
-            yield return new WaitForSeconds(1f);
+            // 2 (Kuning)
+            yield return StartCoroutine(PlayStepCountdown("2", new Color32(255, 215, 0, 255), 1f));
 
-            teksCountdown.text = "1";
-            yield return new WaitForSeconds(1f);
+            // 1 (Hijau Muda)
+            yield return StartCoroutine(PlayStepCountdown("1", new Color32(144, 238, 144, 255), 1f));
 
-            teksCountdown.text = "MULAI!";
-            yield return new WaitForSeconds(0.6f);
+            // MULAI! (Hijau Cerah)
+            yield return StartCoroutine(PlayStepCountdown("MULAI!", new Color32(50, 205, 50, 255), 0.7f));
 
-            panelCountdown.SetActive(false);
+            if (targetObjek != null) targetObjek.SetActive(false);
         }
         else
         {
@@ -130,6 +133,40 @@ public class GameplayManager : MonoBehaviour
             scriptTimer.ResetTimer();
             scriptTimer.enabled = true;
         }
+    }
+
+    private IEnumerator PlayStepCountdown(string text, Color color, float duration)
+    {
+        if (teksCountdown == null) yield break;
+
+        teksCountdown.text = text;
+        teksCountdown.color = color;
+
+        Transform tf = teksCountdown.transform;
+        Vector3 baseScale = Vector3.one;
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+
+            // Efek Pop Membal (Punch Zoom Out)
+            float scaleMultiplier;
+            if (t < 0.25f)
+            {
+                scaleMultiplier = Mathf.Lerp(2.0f, 0.9f, t / 0.25f);
+            }
+            else
+            {
+                scaleMultiplier = Mathf.Lerp(0.9f, 1f, (t - 0.25f) / 0.75f);
+            }
+
+            tf.localScale = baseScale * scaleMultiplier;
+            yield return null;
+        }
+
+        tf.localScale = baseScale;
     }
 
     private void SetPilihanJawabanInteractable(bool state)
