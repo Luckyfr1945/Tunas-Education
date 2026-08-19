@@ -95,6 +95,7 @@ public class GameplayManager : MonoBehaviour
     {
         isCountingDown = true;
         SetPilihanJawabanInteractable(false);
+        SetVisibilitySoalDanJawaban(false); // Sembunyikan teks soal & jawaban selama countdown agar tidak kelihatan
 
         if (scriptTimer != null) 
         {
@@ -112,7 +113,7 @@ public class GameplayManager : MonoBehaviour
             }
         }
 
-        // Tentukan objek yang akan diaktifkan (bisa panel manual atau auto-backdrop)
+        // Tentukan objek backdrop blur / gelap di belakang countdown
         GameObject autoBackdrop = null;
         if (panelCountdown != null)
         {
@@ -120,13 +121,11 @@ public class GameplayManager : MonoBehaviour
         }
         else if (teksCountdown != null)
         {
-            // Jika belum buat panel, buat backdrop gelap otomatis di belakang teks
             Canvas canvas = teksCountdown.GetComponentInParent<Canvas>();
             if (canvas != null)
             {
-                autoBackdrop = new GameObject("Countdown_AutoBackdrop", typeof(RectTransform), typeof(Image));
+                autoBackdrop = new GameObject("Countdown_FrostedBackdrop", typeof(RectTransform), typeof(Image));
                 autoBackdrop.transform.SetParent(canvas.transform, false);
-                // Posisikan tepat di belakang teks countdown
                 autoBackdrop.transform.SetSiblingIndex(teksCountdown.transform.GetSiblingIndex());
 
                 RectTransform rt = autoBackdrop.GetComponent<RectTransform>();
@@ -136,7 +135,14 @@ public class GameplayManager : MonoBehaviour
                 rt.offsetMax = Vector2.zero;
 
                 Image img = autoBackdrop.GetComponent<Image>();
-                img.color = new Color(0f, 0f, 0f, 0.85f); // Gelap 85% menutupi soal di belakang
+                img.color = new Color(0.04f, 0.07f, 0.1f, 0.90f); // Frosted dark blur overlay 90%
+
+                // Coba pasang shader blur jika ada
+                Shader blurShader = Shader.Find("UI/FrostedBlurUI");
+                if (blurShader != null)
+                {
+                    img.material = new Material(blurShader);
+                }
             }
             teksCountdown.gameObject.SetActive(true);
         }
@@ -164,6 +170,8 @@ public class GameplayManager : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
 
+        // Tampilkan kembali soal & jawaban saat game dimulai
+        SetVisibilitySoalDanJawaban(true);
         isCountingDown = false;
         SetPilihanJawabanInteractable(true);
 
@@ -171,6 +179,18 @@ public class GameplayManager : MonoBehaviour
         {
             scriptTimer.ResetTimer();
             scriptTimer.enabled = true;
+        }
+    }
+
+    private void SetVisibilitySoalDanJawaban(bool visible)
+    {
+        if (teksPertanyaan != null) teksPertanyaan.gameObject.SetActive(visible);
+        if (teksPilihanJawaban != null)
+        {
+            foreach (var teks in teksPilihanJawaban)
+            {
+                if (teks != null) teks.gameObject.SetActive(visible);
+            }
         }
     }
 
