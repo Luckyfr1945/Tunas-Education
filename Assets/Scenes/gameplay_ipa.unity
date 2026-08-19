@@ -1591,8 +1591,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -2015,8 +2015,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -3607,8 +3607,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -4354,8 +4354,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -5117,7 +5117,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIResponsivenessFixer
   referenceResolution: {x: 1920, y: 1080}
   matchWidthOrHeight: 0.5
-  autoFixOnPlay: 1
 --- !u!1 &1912063854
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,6 +5895,7 @@ MonoBehaviour:
   totalSoalPameran: 5
   panelCountdown: {fileID: 0}
   teksCountdown: {fileID: 0}
+  ukuranFontCountdown: 140
   nyawaMaksimal: 3
   statusHatiUI:
   - {fileID: 2095548320}
@@ -5903,12 +5903,12 @@ MonoBehaviour:
   - {fileID: 2090753451}
   - {fileID: 1810927396}
   kumpulanSoal:
-  - {fileID: 11400000, guid: 59a52a10eca62f6dab68081c8f9ea4f2, type: 2}
   - {fileID: 11400000, guid: 3bfd634ca1fa6889ab9e11abf005dfdd, type: 2}
   - {fileID: 11400000, guid: 2f4ca4d715afff671a98375285986e16, type: 2}
   - {fileID: 11400000, guid: f62a8de4270f2bc619962ab4084bd29f, type: 2}
   - {fileID: 11400000, guid: 6414245055b4a7a20a512cc7b10ed42f, type: 2}
   - {fileID: 11400000, guid: a83cad32ad9fb819d9f99636a2465587, type: 2}
+  - {fileID: 11400000, guid: 59a52a10eca62f6dab68081c8f9ea4f2, type: 2}
   teksPertanyaan: {fileID: 1899889429}
   teksPilihanJawaban:
   - {fileID: 1234164980}
