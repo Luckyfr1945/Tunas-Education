@@ -346,20 +346,51 @@ public class GameplayManager : MonoBehaviour
         TampilkanSoal();
     }
 
+    private int indeksTombolBenarSaatIni; 
+
     private void TampilkanSoal()
     {
         if (soalSaatIni == null) return;
 
         if (teksPertanyaan != null) teksPertanyaan.text = soalSaatIni.teksPertanyaan;
         
+        int jumlahPilihan = soalSaatIni.pilihanJawaban != null ? soalSaatIni.pilihanJawaban.Length : 0;
+        
+        // Buat list indeks pilihan (0, 1, 2, 3) lalu diacak (Fisher-Yates Shuffle)
+        List<int> listIndexAcak = new List<int>();
+        for (int i = 0; i < jumlahPilihan; i++)
+        {
+            listIndexAcak.Add(i);
+        }
+
+        for (int i = 0; i < listIndexAcak.Count; i++)
+        {
+            int rnd = Random.Range(i, listIndexAcak.Count);
+            int temp = listIndexAcak[i];
+            listIndexAcak[i] = listIndexAcak[rnd];
+            listIndexAcak[rnd] = temp;
+        }
+
+        // Tampilkan teks jawaban yang sudah diacak ke tombol A, B, C, D
         for (int i = 0; i < teksPilihanJawaban.Length; i++)
         {
             if (teksPilihanJawaban[i] != null)
             {
-                if (soalSaatIni.pilihanJawaban != null && i < soalSaatIni.pilihanJawaban.Length)
-                    teksPilihanJawaban[i].text = soalSaatIni.pilihanJawaban[i];
+                if (i < listIndexAcak.Count)
+                {
+                    int indexJawabanAsli = listIndexAcak[i];
+                    teksPilihanJawaban[i].text = soalSaatIni.pilihanJawaban[indexJawabanAsli];
+
+                    // Catat tombol ke berapa yang memegang jawaban benar
+                    if (indexJawabanAsli == soalSaatIni.indeksJawabanBenar)
+                    {
+                        indeksTombolBenarSaatIni = i;
+                    }
+                }
                 else
+                {
                     teksPilihanJawaban[i].text = "-";
+                }
             }
         }
 
@@ -378,7 +409,8 @@ public class GameplayManager : MonoBehaviour
     {
         if (isGameSelesai || isCountingDown || soalSaatIni == null) return; 
 
-        if (indeksPilihan == soalSaatIni.indeksJawabanBenar) 
+        // Cocokkan apakah tombol yang diklik adalah tombol yang menyimpan jawaban benar saat ini
+        if (indeksPilihan == indeksTombolBenarSaatIni) 
         {
             if (scriptTimer != null) scriptTimer.enabled = false; 
             Menang();
