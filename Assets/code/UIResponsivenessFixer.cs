@@ -3,9 +3,8 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Script pembantu otomatis untuk menjaga UI dan Anchor tetap presisi dan responsif
-/// di semua ukuran layar / rasio (16:9, Free Aspect, Tablet, Ultrawide, dll).
+/// saat game dijalankan (Play Mode) di berbagai ukuran layar / rasio.
 /// </summary>
-[ExecuteAlways]
 [RequireComponent(typeof(Canvas))]
 public class UIResponsivenessFixer : MonoBehaviour
 {
@@ -14,21 +13,24 @@ public class UIResponsivenessFixer : MonoBehaviour
     [Range(0f, 1f)]
     public float matchWidthOrHeight = 0.5f;
 
+    [Header("Opsi")]
+    [Tooltip("Jika dicentang, hanya akan merapikan saat game dimainkan")]
+    public bool autoFixOnPlay = true;
+
     private void Awake()
     {
-        FixCanvasScaler();
-        FixAnchors();
+        if (Application.isPlaying && autoFixOnPlay)
+        {
+            FixCanvasScaler();
+            FixAnchors();
+        }
     }
 
-    private void Start()
+    [ContextMenu("Rapikan UI & Scaler Sekarang")]
+    public void ManualFix()
     {
         FixCanvasScaler();
         FixAnchors();
-    }
-
-    private void OnValidate()
-    {
-        FixCanvasScaler();
     }
 
     public void FixCanvasScaler()
