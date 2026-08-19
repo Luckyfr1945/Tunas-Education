@@ -18,6 +18,8 @@ public class GameplayManager : MonoBehaviour
     [Header("Sistem Countdown (3 Detik di Awal)")]
     public GameObject panelCountdown;
     public TMP_Text teksCountdown;
+    [Tooltip("Ukuran font countdown (bisa kamu atur agar pas dan besar)")]
+    public float ukuranFontCountdown = 140f;
 
     [Header("Sistem Darah / Nyawa")]
     public int nyawaMaksimal = 3;
@@ -141,6 +143,14 @@ public class GameplayManager : MonoBehaviour
 
         teksCountdown.text = text;
         teksCountdown.color = color;
+        
+        // Buat teks otomatis besar, tebal (bold), dan di tengah
+        if (ukuranFontCountdown > 0)
+        {
+            teksCountdown.fontSize = ukuranFontCountdown;
+        }
+        teksCountdown.fontStyle = FontStyles.Bold;
+        teksCountdown.alignment = TextAlignmentOptions.Center;
 
         Transform tf = teksCountdown.transform;
         Vector3 baseScale = Vector3.one;
@@ -151,15 +161,15 @@ public class GameplayManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
 
-            // Efek Pop Membal (Punch Zoom Out)
+            // Efek Pop Membal Lebih Besar (Punch Zoom Out)
             float scaleMultiplier;
             if (t < 0.25f)
             {
-                scaleMultiplier = Mathf.Lerp(2.0f, 0.9f, t / 0.25f);
+                scaleMultiplier = Mathf.Lerp(2.2f, 0.95f, t / 0.25f);
             }
             else
             {
-                scaleMultiplier = Mathf.Lerp(0.9f, 1f, (t - 0.25f) / 0.75f);
+                scaleMultiplier = Mathf.Lerp(0.95f, 1f, (t - 0.25f) / 0.75f);
             }
 
             tf.localScale = baseScale * scaleMultiplier;
