@@ -465,18 +465,37 @@ public class GameplayManager : MonoBehaviour
         {
             panelMenang.SetActive(true);
 
-            // Jika teksPesanMenang dipasang, hanya aktifkan jika di soal terakhir (tamat) atau berada di dalam panel
-            if (teksPesanMenang != null)
+            // Cari teks di dalam panel menang jika teksPesanMenang belum di-assign
+            TMP_Text teksDiDalamPanel = teksPesanMenang;
+            if (teksDiDalamPanel == null || !teksDiDalamPanel.transform.IsChildOf(panelMenang.transform))
+            {
+                TMP_Text[] semuaTeks = panelMenang.GetComponentsInChildren<TMP_Text>(true);
+                foreach (var t in semuaTeks)
+                {
+                    if (t.text.Contains("CONTINUE") || t.text.Contains("LANJUT") || t.text.Contains("LEVEL") || t.text.Contains("SOAL"))
+                    {
+                        teksDiDalamPanel = t;
+                        break;
+                    }
+                }
+            }
+
+            if (teksDiDalamPanel != null)
             {
                 if (levelAktif >= totalSoalPameran)
                 {
-                    teksPesanMenang.gameObject.SetActive(true);
-                    teksPesanMenang.text = "SELAMAT! KAMU MENYELESAIKAN SEMUA SOAL!";
+                    teksDiDalamPanel.text = "SELAMAT! KAMU TELAH MENYELESAIKAN SEMUA SOAL!";
                 }
                 else
                 {
-                    teksPesanMenang.gameObject.SetActive(false);
+                    teksDiDalamPanel.text = "LANJUT KE SOAL BERIKUTNYA?";
                 }
+            }
+
+            // Pastikan objek teks yang terpisah di luar panel tetap disembunyikan
+            if (teksPesanMenang != null && !teksPesanMenang.transform.IsChildOf(panelMenang.transform))
+            {
+                teksPesanMenang.gameObject.SetActive(false);
             }
         }
         else if (teksPesanMenang != null)
@@ -484,7 +503,7 @@ public class GameplayManager : MonoBehaviour
             teksPesanMenang.gameObject.SetActive(true);
             if (levelAktif >= totalSoalPameran)
             {
-                teksPesanMenang.text = "SELAMAT! KAMU MENYELESAIKAN SEMUA SOAL!";
+                teksPesanMenang.text = "SELAMAT! KAMU TELAH MENYELESAIKAN SEMUA SOAL!";
             }
             else
             {
