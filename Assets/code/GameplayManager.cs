@@ -87,8 +87,26 @@ public class GameplayManager : MonoBehaviour
         // Pilih soal dulu agar teks pertanyaan siap
         PilihSoalRandom();
 
-        // Jalankan countdown 3 detik di awal game
-        StartCoroutine(StartCountdownRoutine());
+        // Jalankan countdown 3 detik HANYA saat pertama kali mulai game (Soal 1)
+        if (levelAktif == 1)
+        {
+            StartCoroutine(StartCountdownRoutine());
+        }
+        else
+        {
+            // Untuk Soal 2, 3, 4, dst: Langsung mulai tanpa countdown
+            isCountingDown = false;
+            SetVisibilitySoalDanJawaban(true);
+            SetPilihanJawabanInteractable(true);
+            if (teksCountdown != null) teksCountdown.gameObject.SetActive(false);
+            if (panelCountdown != null) panelCountdown.SetActive(false);
+
+            if (scriptTimer != null)
+            {
+                scriptTimer.ResetTimer();
+                scriptTimer.enabled = true;
+            }
+        }
     }
 
     private IEnumerator StartCountdownRoutine()
