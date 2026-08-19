@@ -6010,7 +6010,6 @@ MonoBehaviour:
   - {fileID: 705781820}
   - {fileID: 1521435186}
   teksLevelUI: {fileID: 815957241}
-  teksPesanMenang: {fileID: 1997224707}
   scriptTimer: {fileID: 2069666544}
   waktuDasar: 30
   potonganWaktu: 5

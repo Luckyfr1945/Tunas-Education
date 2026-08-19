@@ -40,8 +40,7 @@ public class GameplayManager : MonoBehaviour
     public TMP_Text teksPertanyaan;
     public TMP_Text[] teksPilihanJawaban; 
     [Tooltip("Masukkan TextMeshPro untuk tampilan tulisan Level / Soal di sini")]
-    public TMP_Text teksLevelUI; 
-    public TMP_Text teksPesanMenang;
+    public TMP_Text teksLevelUI;
 
     [Header("Komponen Timer")]
     public TimerBar scriptTimer; 
@@ -81,18 +80,6 @@ public class GameplayManager : MonoBehaviour
         if (panelMenang != null) panelMenang.SetActive(false);
         if (panelKalah != null) panelKalah.SetActive(false);
         if (panelPause != null) panelPause.SetActive(false);
-        
-        // Sembunyikan teks pesan menang saat mulai game agar tidak muncul di tengah soal
-        if (teksPesanMenang != null) 
-        {
-            teksPesanMenang.enableWordWrapping = false;
-            teksPesanMenang.overflowMode = TextOverflowModes.Overflow;
-            if (teksPesanMenang.rectTransform != null)
-            {
-                teksPesanMenang.rectTransform.sizeDelta = new Vector2(1600f, 300f);
-            }
-            teksPesanMenang.gameObject.SetActive(false);
-        }
         
         isGameSelesai = false;
 
@@ -464,51 +451,6 @@ public class GameplayManager : MonoBehaviour
         if (panelMenang != null)
         {
             panelMenang.SetActive(true);
-
-            // Cari teks di dalam panel menang jika teksPesanMenang belum di-assign
-            TMP_Text teksDiDalamPanel = teksPesanMenang;
-            if (teksDiDalamPanel == null || !teksDiDalamPanel.transform.IsChildOf(panelMenang.transform))
-            {
-                TMP_Text[] semuaTeks = panelMenang.GetComponentsInChildren<TMP_Text>(true);
-                foreach (var t in semuaTeks)
-                {
-                    if (t.text.Contains("CONTINUE") || t.text.Contains("LANJUT") || t.text.Contains("LEVEL") || t.text.Contains("SOAL"))
-                    {
-                        teksDiDalamPanel = t;
-                        break;
-                    }
-                }
-            }
-
-            if (teksDiDalamPanel != null)
-            {
-                if (levelAktif >= totalSoalPameran)
-                {
-                    teksDiDalamPanel.text = "SELAMAT! KAMU TELAH MENYELESAIKAN SEMUA SOAL!";
-                }
-                else
-                {
-                    teksDiDalamPanel.text = "LANJUT KE SOAL BERIKUTNYA?";
-                }
-            }
-
-            // Pastikan objek teks yang terpisah di luar panel tetap disembunyikan
-            if (teksPesanMenang != null && !teksPesanMenang.transform.IsChildOf(panelMenang.transform))
-            {
-                teksPesanMenang.gameObject.SetActive(false);
-            }
-        }
-        else if (teksPesanMenang != null)
-        {
-            teksPesanMenang.gameObject.SetActive(true);
-            if (levelAktif >= totalSoalPameran)
-            {
-                teksPesanMenang.text = "SELAMAT! KAMU TELAH MENYELESAIKAN SEMUA SOAL!";
-            }
-            else
-            {
-                teksPesanMenang.text = "JAWABAN BENAR!";
-            }
         }
     }
 
