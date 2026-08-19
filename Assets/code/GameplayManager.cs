@@ -82,6 +82,18 @@ public class GameplayManager : MonoBehaviour
         if (panelKalah != null) panelKalah.SetActive(false);
         if (panelPause != null) panelPause.SetActive(false);
         
+        // Sembunyikan teks pesan menang saat mulai game agar tidak muncul di tengah soal
+        if (teksPesanMenang != null) 
+        {
+            teksPesanMenang.enableWordWrapping = false;
+            teksPesanMenang.overflowMode = TextOverflowModes.Overflow;
+            if (teksPesanMenang.rectTransform != null)
+            {
+                teksPesanMenang.rectTransform.sizeDelta = new Vector2(1600f, 300f);
+            }
+            teksPesanMenang.gameObject.SetActive(false);
+        }
+        
         isGameSelesai = false;
 
         // Pilih soal dulu agar teks pertanyaan siap
@@ -452,9 +464,18 @@ public class GameplayManager : MonoBehaviour
         if (panelMenang != null)
         {
             panelMenang.SetActive(true);
-            if (levelAktif >= totalSoalPameran && teksPesanMenang != null)
+        }
+
+        if (teksPesanMenang != null)
+        {
+            teksPesanMenang.gameObject.SetActive(true);
+            if (levelAktif >= totalSoalPameran)
             {
                 teksPesanMenang.text = "SELAMAT! KAMU MENYELESAIKAN SEMUA SOAL!";
+            }
+            else
+            {
+                teksPesanMenang.text = "JAWABAN BENAR!";
             }
         }
     }
