@@ -464,9 +464,22 @@ public class GameplayManager : MonoBehaviour
         if (panelMenang != null)
         {
             panelMenang.SetActive(true);
-        }
 
-        if (teksPesanMenang != null)
+            // Jika teksPesanMenang dipasang, hanya aktifkan jika di soal terakhir (tamat) atau berada di dalam panel
+            if (teksPesanMenang != null)
+            {
+                if (levelAktif >= totalSoalPameran)
+                {
+                    teksPesanMenang.gameObject.SetActive(true);
+                    teksPesanMenang.text = "SELAMAT! KAMU MENYELESAIKAN SEMUA SOAL!";
+                }
+                else
+                {
+                    teksPesanMenang.gameObject.SetActive(false);
+                }
+            }
+        }
+        else if (teksPesanMenang != null)
         {
             teksPesanMenang.gameObject.SetActive(true);
             if (levelAktif >= totalSoalPameran)
