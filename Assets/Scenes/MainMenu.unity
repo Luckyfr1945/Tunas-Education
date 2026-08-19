@@ -816,10 +816,10 @@ RectTransform:
   - {fileID: 488404089}
   m_Father: {fileID: 1222129601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.43042, y: -37.55301}
+  m_SizeDelta: {x: 1128.032, y: 580.6324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285453399
 MonoBehaviour:
@@ -2421,7 +2421,7 @@ Transform:
   m_GameObject: {fileID: 1090322358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2449,10 +2449,10 @@ MonoBehaviour:
   exitButton: {fileID: 367196145}
   igButton: {fileID: 560746235}
   tiktokButton: {fileID: 32643996}
-  readyPopupPanel: {fileID: 0}
+  readyPopupPanel: {fileID: 285453397}
   btnConfirmPlay: {fileID: 402312437}
   btnCancelPlay: {fileID: 745587257}
-  playTargetScene: Category
+  playTargetScene: gameplay_ipa
   settingsTargetScene: settings
   creditTargetScene: credit
 --- !u!1 &1222129597
@@ -2582,6 +2582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIResponsivenessFixer
   referenceResolution: {x: 1920, y: 1080}
   matchWidthOrHeight: 0.5
+  autoFixOnPlay: 1
 --- !u!1 &1353728252
 GameObject:
   m_ObjectHideFlags: 0
