@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
   m_Name: Soal_Otomatis_002
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
-  teksPertanyaan: Bagian sel yang berfungsi sebagai pusat kendali seluruh aktivitas
-    sel adalah?
+  teksPertanyaan: Berikut makanan yang bukan tinggi zat besi
   pilihanJawaban:
-  - Mitokondria
-  - Ribosom
-  - Nukleus
-  - Vakuola
-  indeksJawabanBenar: 2
+  - kangkung
+  - daun kelor
+  - hati ayam
+  - kembang kol
+  indeksJawabanBenar: 3

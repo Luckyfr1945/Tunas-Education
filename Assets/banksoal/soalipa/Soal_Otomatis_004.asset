@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
   m_Name: Soal_Otomatis_004
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
-  teksPertanyaan: Organ pada tumbuhan yang berfungsi menyerap air dan mineral dari
-    tanah adalah?
+  teksPertanyaan: Zat gizi manakah yang menjadi sumber energi utama bagi tubuh untuk beraktifitas?
   pilihanJawaban:
-  - Daun
-  - Batang
-  - Bunga
-  - Akar
-  indeksJawabanBenar: 3
+  - Protein
+  - Vitamin
+  - karbo
+  - mineral
+  indeksJawabanBenar: 2

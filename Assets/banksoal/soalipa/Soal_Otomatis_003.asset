@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
   m_Name: Soal_Otomatis_003
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
-  teksPertanyaan: Proses pembuatan makanan pada tumbuhan dengan bantuan cahaya matahari
-    disebut?
+  teksPertanyaan: Makanan tinggi vitamin A adalah
   pilihanJawaban:
-  - Respirasi
-  - Transpirasi
-  - Fotosintesis
-  - Fermentasi
-  indeksJawabanBenar: 2
+  - wortel
+  - singkong
+  - terong
+  - Kentang
+  indeksJawabanBenar: 0

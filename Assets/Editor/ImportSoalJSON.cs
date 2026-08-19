@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEditor; // Wajib pakai ini untuk bikin file .asset
+using UnityEditor;
 using System.IO;
 
-// Kelas pembungkus struktur JSON
 [System.Serializable]
 public class StrukturSoal
 {
@@ -19,45 +18,78 @@ public class WrapperJSON
 
 public class ImportSoalJSON : MonoBehaviour
 {
-    // Ini akan bikin menu baru di bar atas Unity
-    [MenuItem("Game Kuis/Import Soal Dari JSON")]
-    public static void ImportSoal()
+    [MenuItem("Game Kuis/Import Soal IPA")]
+    public static void ImportSoalIPA()
     {
-        // Ganti path ini sesuai lokasi kamu menaruh file JSON di Unity
-        string pathJSON = "Assets/banksoal/Math/soal_math.json"; 
-        
-        // Folder tujuan tempat file .asset akan dicetak (pastikan foldernya sudah kamu buat!)
-        string folderTujuan = "Assets/banksoal/Math/";
+        string pathJSON = "Assets/banksoal/IPA/soal.json";
+        if (!File.Exists(pathJSON)) pathJSON = "Assets/banksoal/soalipa/soal_ipa.json";
+        ImportDariFile(pathJSON, "Assets/banksoal/soalipa/");
+    }
 
+    [MenuItem("Game Kuis/Import Soal Math")]
+    public static void ImportSoalMath()
+    {
+        ImportDariFile("Assets/banksoal/Math/soal_math.json", "Assets/banksoal/Math/");
+    }
+
+    [MenuItem("Game Kuis/Import Soal Sarkas")]
+    public static void ImportSoalSarkas()
+    {
+        ImportDariFile("Assets/banksoal/SARKAS/soalsarkes.json", "Assets/banksoal/SARKAS/");
+    }
+
+    public static void ImportDariFile(string pathJSON, string folderTujuan)
+    {
         if (!File.Exists(pathJSON))
         {
             Debug.LogError("File JSON tidak ditemukan di: " + pathJSON);
+            EditorUtility.DisplayDialog("Error", "File JSON tidak ditemukan di:\n" + pathJSON, "OK");
             return;
         }
 
         string isiJSON = File.ReadAllText(pathJSON);
         WrapperJSON data = JsonUtility.FromJson<WrapperJSON>(isiJSON);
 
+        if (data == null || data.kumpulanData == null || data.kumpulanData.Length == 0)
+        {
+            Debug.LogError("Format JSON salah atau data soal kosong!");
+            EditorUtility.DisplayDialog("Error", "Format JSON salah atau data soal kosong!", "OK");
+            return;
+        }
+
+        if (!Directory.Exists(folderTujuan))
+        {
+            Directory.CreateDirectory(folderTujuan);
+        }
+
         int counter = 1;
         foreach (StrukturSoal soal in data.kumpulanData)
         {
-            // Bikin cetakan kosong di memori
-            DataSoal assetBaru = ScriptableObject.CreateInstance<DataSoal>();
-            
-            // Isi data dari JSON ke cetakan
-            assetBaru.teksPertanyaan = soal.teksPertanyaan;
-            assetBaru.pilihanJawaban = soal.pilihanJawaban;
-            assetBaru.indeksJawabanBenar = soal.indeksJawabanBenar;
-
-            // Cetak jadi file fisik .asset
             string namaFile = folderTujuan + "Soal_Otomatis_" + counter.ToString("000") + ".asset";
-            AssetDatabase.CreateAsset(assetBaru, namaFile);
+            DataSoal asset = AssetDatabase.LoadAssetAtPath<DataSoal>(namaFile);
+
+            if (asset == null)
+            {
+                asset = ScriptableObject.CreateInstance<DataSoal>();
+                asset.teksPertanyaan = soal.teksPertanyaan;
+                asset.pilihanJawaban = soal.pilihanJawaban;
+                asset.indeksJawabanBenar = soal.indeksJawabanBenar;
+                AssetDatabase.CreateAsset(asset, namaFile);
+            }
+            else
+            {
+                asset.teksPertanyaan = soal.teksPertanyaan;
+                asset.pilihanJawaban = soal.pilihanJawaban;
+                asset.indeksJawabanBenar = soal.indeksJawabanBenar;
+                EditorUtility.SetDirty(asset);
+            }
             
             counter++;
         }
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("Sukses import " + data.kumpulanData.Length + " soal!");
+        Debug.Log("Sukses import " + data.kumpulanData.Length + " soal ke " + folderTujuan);
+        EditorUtility.DisplayDialog("Sukses!", "Berhasil mengimpor " + data.kumpulanData.Length + " soal ke folder " + folderTujuan, "OK");
     }
 }

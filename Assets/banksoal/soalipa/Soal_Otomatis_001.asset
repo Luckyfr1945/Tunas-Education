@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9867b2e98e93d211aecac0e2c1a2a22, type: 3}
   m_Name: Soal_Otomatis_001
   m_EditorClassIdentifier: Assembly-CSharp::DataSoal
-  teksPertanyaan: Hewan pemakan daging disebut?
+  teksPertanyaan: Berikut yang merupakan makanan tinggi serat adalah
   pilihanJawaban:
-  - Herbivora
-  - Karnivora
-  - Omnivora
-  - Insektivora
-  indeksJawabanBenar: 1
+  - brokoli
+  - roti
+  - Tahu
+  - Telur
+  indeksJawabanBenar: 0
