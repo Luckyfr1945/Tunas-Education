@@ -3004,6 +3004,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameplayManager
   kodeKategori: MATH
+  totalSoalPameran: 5
+  panelCountdown: {fileID: 0}
+  teksCountdown: {fileID: 0}
   nyawaMaksimal: 3
   statusHatiUI:
   - {fileID: 1480712738}
@@ -3119,6 +3122,7 @@ MonoBehaviour:
   - {fileID: 877079609}
   - {fileID: 1060512012}
   teksLevelUI: {fileID: 1933032382}
+  teksPesanMenang: {fileID: 0}
   scriptTimer: {fileID: 919974163}
   waktuDasar: 30
   potonganWaktu: 5
